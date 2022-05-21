@@ -69,12 +69,13 @@ font-size: 4rem;
 h2 {
 font-size: 3rem;
 font-weight: 400;
+margin-bottom: 1rem;
 }
-h3 {
+h3, p {
 font-size: 2rem;
 font-weight: 600;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
 text-align: center;
 font-family: 'Titillium Web', sans-serif;
 color: var(--gris);
@@ -280,4 +281,11 @@ color: var(--grisclaro);
 letter-spacing: 1pt;
 margin-top: 3rem;
 padding: 3rem;
+}
+.sobre-mi {
+padding: 3rem;
+width: min(60rem,100%);
+margin: auto;
+text-align: center;
+letter-spacing: 1px;
 }
