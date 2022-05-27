@@ -12,19 +12,24 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="titulo-yulia"> <!--Head-->
-        <h1 class="titulo-yulia animate__animated animate__backInLeft">Yulia Monti <span class="titulo contenedor animate__animated animate__backInRight"> Maquetadora Web </span> </h1>
-    </header>
-
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor"> <!--Menú de Navegación-->
-            <a href="./index.html">Inicio</a>
-            <a href="./html/nosotros.html">Sobre Mi</a>
-            <a href="./html/clientes.html">Clientes</a>
-            <a href="./html/contacto.html">Contacto</a>
-        </nav>
-    </div>
-    <section class="hero"> <!--Sección diseño y desarrollo web + Ubicación (Rosario)-->
+<!--Header, titulo + menu de navegacion-->
+<header> 
+<!--Header titulo-->
+        <div class="titulo-yulia"> 
+            <h1 class="titulo-yulia animate__animated animate__backInLeft">Yulia Monti <span class="titulo contenedor animate__animated animate__backInRight"> Maquetadora Web </span> </h1>
+        </div>
+<!--Menú de Navegación-->
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor"> 
+                <a href="./index.html">Inicio</a>
+                <a href="#sobre-mi">Sobre Mi</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+</header>
+<!--Sección diseño y desarrollo web + Ubicación (Rosario)-->
+<section class="hero"> 
         <div class="contenido-hero">
                 <h2> Diseño y Desarrollo Web</h2> 
                 <!--Icono de tablericons-->
@@ -35,30 +40,67 @@
                     </svg>
                 Rosario, Santa Fé, Argentina</p>
                 <a class="boton" href="*">Contactar</a>
-    </section>
-<main> <!--class="contenedor sombra"-->
-    <h2>Mis Servicios</h2> <!--Contenido principal <main> contenedor de servicios-->
-    <div class="servicios">
-        <section class="diseño-web sombra">
-            <img src="./imagenes/buscador.png" width="60">
-            <h3>Diseño Web</h3> <!-- Servicio Diseño Web-->
+</section>
+<!--Contenido principal SERVICIOS-->
+<main> 
+        <h2>Mis Servicios</h2>
+        <div class="servicios">
+            <section class="diseño-web sombra">
+                <img src="./imagenes/buscador.png" width="60">
+                <h3>Diseño Web</h3> <!-- Servicio Diseño Web-->
                 <p>Construyo, gestiono y administro Páginas Web adaptadas a la necesidad del cliente, totalmente responsive, es decir, que podrá verse desde cualquier dispositivo; Tablet, Smartphone u ordenador.</p>
+            </section>
+            <section class="fotografia sombra"> <!--Servicio Fotografía-->
+                <img src="./imagenes/edicion-de-fotos.png" width="60">
+                <h3>Estudios</h3>
+                <p>Html5, Css, Sass, Bootstrap, Git, Github, Seo, Google Ads, Wordpress, Fotografía, Photoshop, Lightroom, Composición.</p>
+            </section>
+            <section class="ecommerce sombra"> <!--Servicio E-commerce-->
+                <img src="./imagenes/las-compras-en-linea.png" width="60">
+                <h3>E-commerce</h3>
+                <p>Construyo, gestiono y administro Sitios con Tienda Online totalmente responsive, es decir, que podrá verse desde cualquier dispositivo; Tablet, Smartphone u ordenador.</p>
+            </section>
+        </div>
+</main>   
+<!--Seccion SOBRE MI-->
+<section>
+    <h2>Sobre Mi</h2>
+        <div id="sobre-mi" class="contenedor sombra w-sm-100">
+            <div class="contenedor-foto">
+                <img class="img-sobremi" src="imagenes/sobre-mi-min.JPG" width="110rem">
+            </div>
+            <div class="sobre-mi">
+                    <p> <span class="hola"> Hola! Soy </span> <span class="font-titulo"> Yulia Monti</span> 
+                    <br>Soy de la Localidad de Amenábar, Provincia de Santa Fé, Argentina. Allí viví hasta 
+                    los 18 años, año en el que viajé a estudiar Instrumentación Quirúrgica a Capital Federal.
+                    En el año 2008, me recibí como Instrumentadora y conseguí mi primer empleo en la Ciudad de Venado Tuerto, allí viví hasta el año 2012, 
+                    año en el que decidí mudarme a la Ciudad de Rosario, Ciudad en la que actualmente resido. 
+                    <br>Desde que llegué a la Ciudad soy aficionada de la Fotografía, 
+                    la misma llevó a interiozarme sobre Composición y Programas de Edición, 
+                    luego me llevó por el mundo de las Redes Sociales
+                    hasta que conocí el fantástico mundo del Desarrollo Web. Aquí me encuentro ahora, estudiando, capacitandome, 
+                    compartiendo mis saberes, con muchas ganas de aprender. Todavía queda un largo camino por recorrer. </p>
+            </div>
+</section>
+<!--Seccion PROYECTOS--> 
+<section> 
+        <h2>Mis Proyectos</h2>
+        <div id="proyectos">
+            <section class="proyecto contenedor sombra w-sm-100">
+                <img class="img-proyecto-sm" src="./imagenes/proyecto-brok.png" width="500">
+                <h3>Brok Electrónica</h3> <!-- Servicio Diseño Web-->
+                <p>Servicio Técnico Oficial de Samsung y Sony</p>
+            </section>
+            <section class="proyecto contenedor sombra w-sm-100">
+                <img class="img-proyecto-sm"  src="./imagenes/proyecto-brok.png" width="500">
+                <h3>Brok Electrónica</h3> <!-- Servicio Diseño Web-->
+                <p>Servicio Técnico Oficial de Samsung y Sony</p>
         </section>
-        <section class="fotografia sombra"> <!--Servicio Fotografía-->
-            <img src="./imagenes/edicion-de-fotos.png" width="60">
-            <h3>Estudios</h3>
-                <p>Html5, Css, Sass, Frameworks, Git, Github, Seo, Google Ads, Wordpress, Fotografía, Photoshop, Lightroom, Composición.</p>
-        </section>
-        <section class="ecommerce sombra"> <!--Servicio E-commerce-->
-            <img src="./imagenes/las-compras-en-linea.png" width="60">
-            <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ex voluptates atque iste sint itaque voluptate deserunt, nulla illum autem!</p>
-        </section>
-    </div>        
-<!--Fin contenido principal <main> contenedor de servicios-->
-<!--Inicio contacto >>> Formulario de contacto -->
-    <section>
-        <h2 class="contacto">Contacto</h2>
+    </div>
+</section>       
+<!--Inicio CONTACTO >>> Formulario de contacto -->
+<section>
+        <h2 class="contacto" id="contacto">Contacto</h2>
         <form class="formulario">
             <fieldset>
                 <legend> Contactame llenando todos los campos </legend>
@@ -88,13 +130,10 @@
                     </div>
             </fieldset>
         </form>
-    </section>
-</main> 
-<!--Fin contacto >>> Formulario de contacto -->
-<!--Inicio pie de página Footer-->
+</section>
+<!--Inicio pie de página FOOTER-->
 <footer class="footer">
     <p> &copy; Todos los derechos reservados Yulia Monti 2022 </p>
 </footer>
-<!--Fin pie de página Footer-->
 </body>
 </html>
