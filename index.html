@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yulia Monti</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Fredoka:wght@300;500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Fredoka:wght@300;500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-<header> 
-        <div class="titulo-yulia"> 
-            <h1 class="titulo-yulia animate__animated animate__backInLeft"> Yulia Monti 
-            <span class="titulo contenedor animate__animated animate__backInRight"> FrontEnd Developer</span> </h1>
+    <header>
+        <div class="titulo-yulia">
+            <h1 data-aos="zoom-in" class="titulo-yulia"> Yulia Monti
+                <span class="titulo contenedor animate__animated animate__backInRight"> Web Developer</span>
+            </h1>
         </div>
 
         <div class="mobile-menu">
@@ -23,123 +28,126 @@
         </div>
 
         <div>
-            <nav class="navegacion-principal flex contenedor"> 
+            <nav class="navegacion-principal flex contenedor">
                 <a href="/">Inicio</a>
-                <a href="#estudios">Estudios</a>
                 <a href="#proyectos">Proyectos</a>
-            <!--<a href="#contacto">Contacto</a>--> 
+                <a href="#estudios"> Tech Stack </a>
+                <a href="https://github.com/yuliamonti" target="_blank"> Repositorio </a>
+                <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank"> Linkedin </a>
+                <!--<a href="#contacto">Contacto</a>-->
             </nav>
         </div>
-</header>
+    </header>
 
-<section class="hero"> 
+    <section class="hero">
         <div class="contenido-hero">
-                <h2> Estudiante Full Stack </h2> 
-                <!--Icono de tablericons-->
-                <a href="https://goo.gl/maps/PFQ5Ef6KS5SoAGTm8" target="_blank"><p> 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4cc5d8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                    </svg> Rosario, Santa Fé, Argentina </p></a> 
-                <a href="http://www.linkedin.com/in/yuliamonti" class="boton" target="_blank" > Contactar <img src="imagenes/linkedin.png" width="28" height="28" class="contactar"> </a>
-</section>
+            <h2> FrontEnd, Estudiante de Full Stack </h2>
+            <!--Icono de tablericons-->
+            <a href="http://www.linkedin.com/in/yuliamonti" class="boton" target="_blank"> Contactar <img
+                    src="imagenes/linkedin.png" width="28" height="28" class="contactar"> </a>
+    </section>
 
-<main> 
-        <h2 id="estudios">Estudios Finalizados y en Curso</h2>
-        <div class="servicios">
+    <main>
+        <section>
+            <h2>Proyectos</h2>
+            <div id="proyectos">
 
-            <section class="fotografia sombra">
-                <h3>"Desarrollo Web Completo",<br> Juan Pablo de la Torre Valdez</h3>
-                <div class="estudio" >
-                    <p>Terminado "HTML, CSS, SASS, JavaScript, Fetch".</p> 
-                    <p>Cursando "PHP, POO - MVC, MySQL - SQL y API's".</p>
-                    <h3>"React", Fernando Herrera</h3>
-                    <p>Cursando. </p> 
-                </div>
-            </section>
+                <section data-aos="fade-up" class="proyecto contenedor w-sm-100">
+                    <a href="https://yuliamonti.github.io/gif-api/" target="_blank">
+                        <img class="img-proyecto-sm" src="imagenes/gif-app-img.png" width="500" alt="Imagen de app gif">
+                    </a>
+                    <div class="contenedor descripcionProyecto">
+                        <h3>Gif App</h3>
+                        <p>App con buscador de Gifs</p>
+                        <p>Desde el buscador puedes elegir el Gif de la categoría que mas te guste. <br>Tecnología
+                            utilizada: React, Vite, Jest, Fetch y API.</p>
+                    </div>
+                </section>
 
-            <section class="diseño-web sombra">
-                <img src="imagenes/html-5.png" width="60" alt="Icono">
-                <img src="imagenes/css.png" width="60" alt="Icono">
-                <img src="imagenes/sass.png" width="60" alt="Icono">
-                <img src="imagenes/git.png" width="60" alt="Icono">
-                <img src="imagenes/github.png" width="60" alt="Icono">
-                <img src="imagenes/bootstrap-logo-shadow.png" width="60" alt="Icono">
-                <img src="imagenes/figma.png" width="60" alt="Icono">
-                <img src="imagenes/wordpress.png" width="60" alt="Icono">
-                <img src="imagenes/javascript.png" width="60" alt="Icono">
-                <img src="imagenes/react.png" width="60" alt="Icono">
-                <img src="imagenes/mysql-.png" width="60" alt="Icono">
-                <img src="imagenes/mysql.png" width="60" alt="Icono">
-                <img src="imagenes/nodejs.png" width="60" alt="Icono">
-                <img src="imagenes/php.png" width="60" alt="Icono">
-                <img src="imagenes/adwords.png" width="60" alt="Icono">
-                <img src="imagenes/seo-search-symbol.png" width="60" alt="Icono">
-                <img src="imagenes/fotografia.pgn.png" width="60" alt="Icono">
-                <img src="imagenes/photoshop-lightroom.png" width="60" alt="Icono">
-                <img src="imagenes/photoshop.png" width="60" alt="Icono">                
-            </section>
+                <section data-aos="fade-up" class="proyecto fd-r contenedor  w-sm-100">
+                    <div class="contenedor descripcionProyecto">
+                        <h3>La Web de Skay Beilinson </h3>
+                        <p>Página no oficial de Skay y los Fakires, banda de Rock Argentino.</p>
+                        <p>Tecnología utilizada: Html, Sass y Gulp.</p>
+                    </div>
+                    <a href="https://yuliamonti.github.io/laWebDeSkay/" target="_blank">
+                        <img class="img-proyecto-sm" src="imagenes/cap-LaWebDeSkay-1.png" width="500"
+                            alt="Imagen de proyecto de La Web de Skay">
+                    </a>
+                </section>
 
-            <section class="ecommerce sombra"> 
-                <h3>"Desarrollo Full Stack", <br> CoderHouse</h3>
-                <div class="estudio" >
-                    <p>Terminado "Desarrollo Web, JavasCript": HTML, CSS, Git, GitHub, Bootstrap, Sass, SEO, JavaScript.</p>
-                    <p>Cursando "React Js".</p>
-                    <p>En fila "Programación BackEnd".</p>
-                </div>
-            </section>
-        </div>
-</main>   
+                <section data-aos="fade-up" class="proyecto contenedor  w-sm-100">
+                    <a href="https://yuliamonti.github.io/carple-monti/" target="_blank">
+                        <img class="img-proyecto-sm" src="imagenes/cap-Carple-1.png" width="500"
+                            alt="Imagen de proyecto de Carple Aberturas">
+                    </a>
+                    <div class="contenedor descripcionProyecto">
+                        <h3>Carple Fábrica de Aberturas</h3>
+                        <p>Página no oficial de Carple, Fábrica de Aberturas.</p>
+                        <p>Tecnología utilizada: HTML y Css.</p>
+                    </div>
+                </section>
 
-<section> 
-        <h2>Proyectos</h2>
-        <div id="proyectos">
-            <section class="proyecto contenedor sombra w-sm-100">
-                <a href="https://brokelectronica.com.ar/" target="_blank">
-                    <img class="img-proyecto-sm" src="imagenes/proyecto-brok.png"  width="500" alt="Imagen de proyecto de Brok Electrónica">
-                </a>
-                <h3>Brok Electrónica</h3> 
-                <p>Servicio Técnico Oficial de Samsung y Sony</p> 
-                <p>Tecnología utilizada: WordPress</p>
-            </section>
+                <section data-aos="fade-up" class="proyecto fd-r contenedor  w-sm-100">
+                    <div class="contenedor descripcionProyecto">
+                        <h3>Brok Electrónica</h3>
+                        <p>Servicio Técnico Oficial de Samsung y Sony, Rosario, Santa Fé, Argetina.</p>
+                        <p>Tecnología utilizada: WordPress.</p>
+                    </div>
+                    <a href="https://brokelectronica.com.ar/" target="_blank">
+                        <img class="img-proyecto-sm" src="imagenes/proyecto-brok.png" width="500"
+                            alt="Imagen de proyecto de Brok Electrónica">
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
 
-            <section class="proyecto contenedor sombra w-sm-100">
-                <a href="https://yuliamonti.github.io/carple-monti/" target="_blank">
-                    <img class="img-proyecto-sm" src="imagenes/cap-Carple-1.png"  width="500" alt="Imagen de proyecto de Carple Aberturas">
-                </a>
-                <h3>Carple Aberturas</h3>
-                <p>Página no oficial de Carple Aberturas</p> 
-                <p>Tecnología utilizada: HTML y Css</p>
-            </section>
+    <h2 id="estudios"> Tech Stack</h2>
+    <section class="skills contenedor">
+        <img src="imagenes/html-5.png" width="60" alt="Icono">
+        <img src="imagenes/css.png" width="60" alt="Icono">
+        <img src="imagenes/javascript.png" width="60" alt="Icono">
+        <img src="imagenes/react.png" width="60" alt="Icono">
+        <img src="imagenes/php.png" width="60" alt="Icono">
+        <img src="imagenes/wordpress.png" width="60" alt="Icono">
+        <img src="imagenes/sass.png" width="60" alt="Icono">
+        <img src="imagenes/bootstrap-logo-shadow.png" width="60" alt="Icono">
+        <img src="imagenes/git.png" width="60" alt="Icono">
+        <img src="imagenes/github.png" width="60" alt="Icono">
+        <img src="imagenes/mysql.png" width="60" alt="Icono">
+        <img src="imagenes/mysql-.png" width="60" alt="Icono">
+        <img src="imagenes/nodejs.png" width="60" alt="Icono">
+        <img src="imagenes/gulp.png" width="60" alt="Icono">
+        <img src="imagenes/firebase-.png" width="50" alt="Icono">
+        <img src="imagenes/mondo-db.png" width="60" alt="Icono">
+        <img src="imagenes/netlify.png" width="60" alt="Icono">
+        <img src="imagenes/figma.png" width="60" alt="Icono">
+        <img src="imagenes/discord.png" width="60" alt="Icono">
+        <img src="imagenes/seo-search-symbol.png" width="60" alt="Icono">
+        <img src="imagenes/adwords.png" width="60" alt="Icono">
+        <img src="imagenes/canva.png" width="60" alt="Icono">
+        <img src="imagenes/photoshop-lightroom.png" width="60" alt="Icono">
+        <img src="imagenes/photoshop.png" width="60" alt="Icono">
+    </section>
 
-            <section class="proyecto contenedor sombra w-sm-100">
-                <a href="https://yuliamonti.github.io/laWebDeSkay/" target="_blank">
-                    <img class="img-proyecto-sm" src="imagenes/cap-LaWebDeSkay-1.png"  width="500" alt="Imagen de proyecto de La Web de Skay">
-                </a>
-                <h3>La Web de Skay</h3> 
-                <p>Página no oficial de Skay y los Fakires</p> 
-                <p>Tecnología utilizada: Sass y Gulp</p>
-            </section>
-
-            <section class="proyecto contenedor sombra w-sm-100">
-                <a href="https://yuliamonti.github.io/gif-api/" target="_blank">
-                    <img class="img-proyecto-sm" src="imagenes/gif-app-img.png"  width="500" alt="Imagen de app gif">
-                </a>
-                <h3>Gif App</h3> 
-                <p>App de Gif</p> 
-                <p>Tecnología utilizada: Vite, React, Jest, Fetch y API</p>
-            </section>
+    <div>
+        <nav class="flex contenedor menuFooter">
+            <a href="/">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#estudios"> Tech Stack </a>
+            <a href="https://github.com/yuliamonti" target="_blank"> Repositorio </a>
+            <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank"> Linkedin </a>
+            <!--<a href="#contacto">Contacto</a>-->
+        </nav>
     </div>
-</section>       
+    <footer class="footer">
+        <p> &copy; Yulia Monti 2022 </p>
+    </footer>
 
-<footer class="footer">
-    <p> &copy; Todos los derechos reservados Yulia Monti 2022 
-        <a href="http://www.linkedin.com/in/yuliamonti" target="_blank"> <img src="imagenes/linkedin.png" width="28"> </a>
-        <a href="https://www.instagram.com/yuliamonti/?hl=es" target="_blank"> <img src="imagenes/instagram.png" width="28"> </a>
-    </p>
-</footer>
-
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 2500 }); </script>
 </body>
+
 </html>
