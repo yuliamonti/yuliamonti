@@ -583,6 +583,18 @@ width: 80%;
         text-align: center;
     }
 }
+.menuSM {
+    margin: 1;
+    color: var(--gris);
+    text-transform: uppercase;
+    justify-content: center;
+}
+.menuSM a:hover {
+    color: #353637;
+    font-weight: 600;
+    background-color: var(--rosaclaro);
+}
+
 /*Footer*/
 .footer {
     background-color: var(--celeste);
