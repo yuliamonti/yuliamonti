@@ -1,3 +1,4 @@
+/*GLOBALES*/
 :root {
     /*Colores de la marca*/
     --violeta: #240e4b;
@@ -6,7 +7,6 @@
     --grisclaro: #fafafa;
     --rosaclaro: #fdeaf2;
 }
-
 *,
 *:before,
 *:after {
@@ -14,27 +14,27 @@
     Margin: 0;
     Padding: 0;
 }
-
 html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 .hero,
 .proyectos,
-.estudios,
 .mas {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
-
 body {
     font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     background-image: linear-gradient(to top, var(--rosaclaro) 0%, var(--grisclaro) 100%);
 }
-
+/*Utilidades*/
+.w-sm-100 {
+    /*en pequeño que tome el 100%*/
+    width: 100%;
+}
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -42,7 +42,14 @@ body {
 a {
     text-decoration: none;
 }
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
+    background-color: var(--grisclaro);
+    padding: 2rem;
+    border-radius: 1rem;
+}
 
+/*BOTONES: Hero - Sección sobre-mi - Página sobre-mi*/
 .boton {
     color: var(--grisclaro);
     padding: 1rem 3rem;
@@ -84,13 +91,6 @@ a {
     background-color: #240e4bbb;
 }
 
-.sombra {
-    box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
-    background-color: var(--grisclaro);
-    padding: 2rem;
-    border-radius: 1rem;
-}
-
 /*tamaños de fuente*/
 h1 {
     font-size: clamp(3rem, 5vw, 6rem);
@@ -130,30 +130,12 @@ h4 {
     flex-direction: row;
 }
 
-/*titulo*/
-.titulo-yulia {
-    font-family: 'Dawning of a New Day', cursive;
-    color: var(--grisclaro);
-    animation-duration: 10s;
-}
-
-.titulo {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-/*Utilidades*/
-.w-sm-100 {
-    /*en pequeño que tome el 100%*/
-    width: 100%;
-}
-
 /*Menú de navegación*/
 .navegacion-principal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 @media (max-width: 768px) {
     .navegacion-principal {
         flex-direction: column;
@@ -164,40 +146,31 @@ h4 {
         transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
     }
 }
-
 .navegacion-principal a {
     color: var(--violeta);
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem;
 }
-
-.navegacion-principal .subrayar {
-    text-transform: uppercase;
-}
-
 .navegacion-principal a:hover {
     font-weight: 600;
     background-color: #240e4b38;
 }
-
 @media (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
 }
-
 .mobile-menu img {
     width: 4rem;
 }
-
 .mostrar {
     visibility: visible;
     opacity: 1;
     height: auto;
 }
 
-/*Hero*/
+/*Hero.........*/
 .hero {
     background-image: url(../imagenes/background-galaxia-yulia-min.jpg);
     background-repeat: no-repeat;
@@ -208,7 +181,6 @@ h4 {
     position: relative;
     margin-bottom: 2rem;
 }
-
 .contenido-hero  {
     position: absolute;
     background-color: rgb(0 0 0 /60%);
@@ -219,17 +191,22 @@ h4 {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 33rem), 50%));
     padding: max(7vw, 2rem);
 }
-
 .astronauta {
     width: max(300px, 35%);
 }
+.titulo-yulia {
+    font-family: 'Dawning of a New Day', cursive;
+    color: var(--grisclaro);
+    animation-duration: 10s;
+}
+.titulo {
+    font-family: 'Titillium Web', sans-serif;
+}
 
 /*Seccion Mis Proyectos*/
-
 #proyectos {
     min-height: 25rem;
 }
-
 .proyecto {
     display: flex;
     align-items: center;
@@ -237,13 +214,11 @@ h4 {
     padding: 3rem 2rem 6rem 2rem;
     gap: 2rem;
 }
-
 .img-proyecto-sm:hover {
     box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     background-color: var(--grisclaro);
     border-radius: 1rem;
 }
-
 @media (max-width: 768px) {
     .proyecto {
         flex-wrap: wrap;
@@ -252,28 +227,23 @@ h4 {
         padding-bottom: 3rem;
         gap: 2rem;
     }
-
     .fd-r {
         flex-direction: column-reverse;
     }
 }
-
 .proyecto img {
     margin: auto;
     border-radius: 2rem;
 }
-
 @media (min-width: 768px) {
     .proyectos {
         display: flex;
         margin: 0 auto;
     }
-
     .img-proyecto-sm {
         max-width: 100%;
     }
 }
-
 @media (max-width: 768px) {
     #proyectos {
         display: flex;
@@ -282,11 +252,9 @@ h4 {
         margin: 0 auto;
         gap: 1rem;
     }
-
     .img-proyecto-sm {
         max-width: 100%;
     }
-
     .proyecto img {
         border-radius: 1rem;
     }
@@ -303,26 +271,22 @@ h4 {
     justify-items: center;
     padding: 1rem;
 }
-
 .skills img {
     margin: 1rem;
 }
-
 .ml {
     margin-left: 3rem;
     margin-right: 1rem;
 }
 
-/*Sobre mi*/
+/*Sección Sobre mi*/
 .titulo-sobre-mi {
     font-family: 'Dawning of a New Day', cursive;
     margin: 0;
 }
-
 .subtitulo {
     margin: 0;
 }
-
 .sobre-mi {
     position: absolute;
     background-color: rgb(0 0 0 /60%);
@@ -332,18 +296,16 @@ h4 {
     align-items: flex-start;
     justify-content: center;
 }
-
 .sobre-mi h3 {
     color: var(--grisclaro);
     text-align: left;
 }
 
-/*Mas sobre mi*/
+/*Página sobre mi*/
 #mas {
     margin: 0 auto;
     width: auto;  
 }
-
 .mas {
     display: flex;
     align-items: center;
@@ -356,7 +318,6 @@ h4 {
         text-align: center;
     }
 }
-
 .descripcion-sobre-mi h4 {
     text-align: left;
     margin-left: 1rem;
@@ -388,11 +349,9 @@ h4 {
     margin-top: 2rem;
     padding: 1rem;
 }
-
 .sm {
 margin: 0;
 }
-
 .menuFooter {
     flex-direction: row;
     justify-content: space-between;
@@ -400,11 +359,6 @@ margin: 0;
     flex-direction: row;
     justify-content: space-between;
 }
-
-.menuFooter a:hover {
-    font-weight: 600;
-}
-
 .menuFooter a {
     color: var(--violeta);
     font-weight: 500;
@@ -412,7 +366,9 @@ margin: 0;
     padding: 1rem;
     max-height: 7vh;
 }
-
+.menuFooter a:hover {
+    font-weight: 600;
+}
 @media (max-width: 768px) {
     .menuFooter {
         display: flex;
