@@ -1,9 +1,7 @@
 :root {
     /*Colores de la marca*/
-    --verde: #4ec79a;
-    --celeste: #4cc5d8;
+    --violeta: #240e4b;
     --rosa: #f590b2;
-    --violeta: #d29bfd;
     --gris: #353637;
     --grisclaro: #fafafa;
     --rosaclaro: #fdeaf2;
@@ -48,8 +46,7 @@ a {
 .boton {
     color: var(--grisclaro);
     padding: 1rem 3rem;
-    margin: 6rem;
-    text-decoration: none;
+    margin-left: min(5rem, 1vw);
     text-transform: uppercase;
     font-weight: 500;
     border-radius: .5rem;
@@ -58,19 +55,25 @@ a {
     border: 1.5px solid var(--grisclaro);
 }
 .boton-sobre-mi {
-    color: var(--gris);
+    color: var(--grisclaro);
+    background-color: var(--violeta);
     padding: 1rem 3rem;
     margin-left: 1rem;
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: .5rem;
+    border-radius: 5rem;
     width: 80%;
     text-align: center;
-    border: 1.5px solid var(--gris);
+}
+.boton-sm {
+    color: var(--grisclaro);
+    text-transform: uppercase;
+    border-radius: 4rem;
+    padding: 1rem 3rem;
 }
 
-.boton:hover {
+.boton:hover,
+.boton-sm:hover {
     cursor: pointer;
     font-weight: bolder;
     background-color: rgb(0 0 0 /20%);
@@ -78,10 +81,10 @@ a {
 .boton-sobre-mi:hover {
     cursor: pointer;
     font-weight: bolder;
-    background-color: rgb(0 0 0 /5%);
+    background-color: #240e4bbb;
 }
+
 .sombra {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     background-color: var(--grisclaro);
     padding: 2rem;
@@ -90,38 +93,32 @@ a {
 
 /*tamaños de fuente*/
 h1 {
-    font-size: 6rem;
-    margin-left: 5rem;
+    font-size: clamp(3rem, 5vw, 6rem);
+    margin-left: min(5rem, 1vw);
     font-weight: lighter;
 }
-
 h1 span {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 h2 {
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 5vw, 4rem);
     font-weight: 800;
     text-transform: uppercase;
-    margin-left: 5rem;
+    margin-left: min(5rem, 1vw);
     margin-bottom: 2rem;
 }
-
 h3 {
-    font-size: 3.5rem;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 400;
 }
-
 h4 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 400;
     margin: 2rem auto;
 }
-
-
 p {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
     font-weight: 400;
 }
 
@@ -131,93 +128,6 @@ h4 {
     font-family: 'Titillium Web', sans-serif;
     color: var(--gris);
     flex-direction: row;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 3.0rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-    h4{
-        font-size: 2.4rem;
-    }
-    p {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 540px) {
-    h1 {
-        font-size: 4.3rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 2.3rem;
-    }
-    h4{
-        font-size: 2.2rem;
-    }
-
-    p {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 414px) {
-    h1 {
-        font-size: 2.8rem;
-    }
-
-    h2 {
-        font-size: 1.9rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-    h4{
-        font-size: 1.9rem;
-    }
-
-    p {
-        font-size: 1.6rem;
-    }
-} 
-
-@media (max-width: 379px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-    h4{
-        font-size: 1.4rem;
-    }
-
-    p {
-        font-size: 1.4rem;
-    }
-}
-@media (max-width: 260px) {
-    p {
-        font-size: 1.3rem;
-    }
 }
 
 /*titulo*/
@@ -237,20 +147,11 @@ h4 {
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    .w-sm-100 {
-        width: auto;
-    }
-}
-
-.flex {
-    display: flex;
-}
-
 /*Menú de navegación*/
 .navegacion-principal {
+    display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -265,11 +166,10 @@ h4 {
 }
 
 .navegacion-principal a {
-    color: var(--gris);
+    color: var(--violeta);
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem;
-    background-color: var(--grisclaro);
 }
 
 .navegacion-principal .subrayar {
@@ -278,7 +178,7 @@ h4 {
 
 .navegacion-principal a:hover {
     font-weight: 600;
-    background-color: var(--rosaclaro);
+    background-color: #240e4b38;
 }
 
 @media (min-width: 768px) {
@@ -297,10 +197,9 @@ h4 {
     height: auto;
 }
 
-
 /*Hero*/
 .hero {
-    background-image: url(../imagenes/background-galaxia-yulia.jpg);
+    background-image: url(../imagenes/background-galaxia-yulia-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -310,54 +209,22 @@ h4 {
     margin-bottom: 2rem;
 }
 
-.contenido-hero {
+.contenido-hero  {
     position: absolute;
     background-color: rgb(0 0 0 /60%);
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.contenido-hero h2,
-.contenido-hero p {
-    color: var(--grisclaro);
+    display: grid;
+    grid-auto-rows: 50rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 33rem), 50%));
+    padding: max(7vw, 2rem);
 }
 
 .astronauta {
-    position: absolute;
-    bottom: 20rem;
-    right: 30rem;
-}
-
-@media (max-width: 1070px) {
-    .astronauta {
-        right: 10rem;
-    }
-}
-@media (max-width: 880px) {
-    .astronauta {
-        position: inherit;
-    }
-}
-@media (max-width: 880px) {
-    .astronauta {
-width: 80%;    
-}
-}
-@media (max-width: 250px) {
-    .astronauta {
-        visibility: hidden;
-    } 
+    width: max(300px, 35%);
 }
 
 /*Seccion Mis Proyectos*/
-#proyectos {
-    margin: 0 auto;
-    width: auto;
-}
 
 #proyectos {
     min-height: 25rem;
@@ -372,7 +239,6 @@ width: 80%;
 }
 
 .img-proyecto-sm:hover {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     background-color: var(--grisclaro);
     border-radius: 1rem;
@@ -391,7 +257,6 @@ width: 80%;
         flex-direction: column-reverse;
     }
 }
-
 
 .proyecto img {
     margin: auto;
@@ -432,38 +297,15 @@ width: 80%;
     color: var(--gris);
     font-weight: 500;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 1rem;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
     justify-items: center;
-    margin: auto;
-    padding: 4rem;
+    padding: 1rem;
 }
 
 .skills img {
     margin: 1rem;
-}
-
-@media (max-width: 768px) {
-    .skills {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .skills img {
-        margin: 0.5rem;
-        width: 5.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .skills {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 280px) {
-    .skills {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .ml {
@@ -496,65 +338,6 @@ width: 80%;
     text-align: left;
 }
 
-/*Astronauta sobre-mi*/
-.a-sobre-mi {
-    bottom: 30rem;
-    right: 4rem;
-}
-
-@media (max-width: 880px) {
-    .a-sobre-mi {
-        position: absolute;
-        right: 0;
-        width: 45%;
-        bottom: 36rem;
-    }
-}
-@media (max-width: 775px) {
-    .a-sobre-mi {
-        position: absolute;
-        right: 0;
-        width: 45%;
-        bottom: 36rem;
-    }
-}
-
-
-@media (max-width: 666px) {
-    .a-sobre-mi {
-        width: 46%;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 445px) {
-    .a-sobre-mi {
-        width: 48%;
-    }
-}
-
-@media (max-width: 414px) {
-    .a-sobre-mi {
-        width: 50%;
-    }
-}
-
-@media (max-width: 379px) {
-    .a-sobre-mi {
-        width: 65%;
-    } 
-}
-@media (max-width: 310px) {
-    .a-sobre-mi {
-        width: 45%;
-    } 
-}
-@media (max-width: 250px) {
-    .a-sobre-mi {
-        visibility: hidden;
-    } 
-}
-
 /*Mas sobre mi*/
 #mas {
     margin: 0 auto;
@@ -565,6 +348,7 @@ width: 80%;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    padding: clamp(3em, 4vw, 2em);
 }
 @media (max-width: 768px) {
     .mas {
@@ -575,7 +359,6 @@ width: 80%;
 
 .descripcion-sobre-mi h4 {
     text-align: left;
-    text-transform: uppercase;
     margin-left: 1rem;
 }
 @media (max-width: 768px) {
@@ -584,9 +367,11 @@ width: 80%;
     }
 }
 .menuSM {
-    margin: 1;
-    color: var(--gris);
+    margin: 1rem;
+    color: var(--violeta);
     text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
     justify-content: center;
 }
 .menuSM a:hover {
@@ -597,15 +382,21 @@ width: 80%;
 
 /*Footer*/
 .footer {
-    background-color: var(--celeste);
     text-align: center;
-    color: var(--grisclaro);
+    color: var(--violeta);
     letter-spacing: 1pt;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1rem;
 }
 
+.sm {
+margin: 0;
+}
+
 .menuFooter {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -615,15 +406,16 @@ width: 80%;
 }
 
 .menuFooter a {
-    color: var(--gris);
-    text-decoration: none;
-    font-size: 2rem;
+    color: var(--violeta);
+    font-weight: 500;
+    font-size: 1.8rem;
     padding: 1rem;
     max-height: 7vh;
 }
 
 @media (max-width: 768px) {
     .menuFooter {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
