@@ -2,8 +2,8 @@
 <h2 align="center">Desarrolladora Frontend</h2>
 
 ## 💫 Sobre mi:
-🔸Estudios finalizados: "Desarrollo Web, JavasCript": HTML, CSS, SASS, Git, GitHub, Bootstrap, Sass, SEO, JavaScript, Wordpress, Google Ads, Marketing Digital".<br>
-🔸Cursando: "React Js, PHP, POO - MVC, MySQL - SQL y API's, Backend".
+🔸Estudios finalizados: "Desarrollo Web, JavasCript, React Js": HTML, CSS, SASS, Git, GitHub, Bootstrap, Sass, Firebase, SEO, Wordpress, Google Ads, Marketing Digital".<br>
+🔸Cursando: "PHP, POO - MVC, MySQL - SQL y API's, Backend".
 <br>
 
 Mi Portfolio **https://yuliamonti.github.io/yuliamonti/**
