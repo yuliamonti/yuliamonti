@@ -350,10 +350,11 @@ h4 {
 /*Footer...............*/
 .footer {
     text-align: center;
-    color: var(--violeta);
+    color: var(--rosaclaro);
     letter-spacing: 1pt;
     margin-top: 2rem;
     padding: 1rem;
+    background-color: var(--violeta);
 }
 .sm {
 margin: 0;
