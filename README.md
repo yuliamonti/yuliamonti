@@ -13,6 +13,8 @@
 
 🔸Primer App E-commerce: Proyecto React Js, Node Js, Firebase como Base de Datos. **https://imperfecta-cosmetica-natural.netlify.app/**
 
+🔸Lic. M. Belén Basso Kinesióloga y Fisiatra: Landing Page utilizando Html5, Css3 y Js. **https://yuliamonti.github.io/kinesiologa-mbbasso/**
+
 🔸La Web de Skay: Proyecto utilizando Sass, Gulp, Npm **https://yuliamonti.github.io/laWebDeSkay/**
 
 🔸Gif App: Proyecto utilizando React, Fetch y API **https://yuliamonti.github.io/gif-api/**
