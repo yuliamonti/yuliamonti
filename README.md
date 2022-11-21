@@ -15,7 +15,7 @@
 
 🔸Lic. M. Belén Basso Kinesióloga y Fisiatra: Landing Page utilizando Html5, Css3 y Js. **https://yuliamonti.github.io/kinesiologa-mbbasso/**
 
-🔸La Web de Skay: Proyecto utilizando Sass, Gulp, Npm **https://yuliamonti.github.io/laWebDeSkay/**
+🔸La Web de Skay: Proyecto utilizando Sass, Gulp, Npm, CssNano, Sourcemap, Terser **https://yuliamonti.github.io/laWebDeSkay/**
 
 🔸Gif App: Proyecto utilizando React, Fetch y API **https://yuliamonti.github.io/gif-api/**
 
