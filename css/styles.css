@@ -7,6 +7,7 @@
     --grisclaro: #fafafa;
     --rosaclaro: #fdeaf2;
 }
+
 *,
 *:before,
 *:after {
@@ -14,33 +15,45 @@
     Margin: 0;
     Padding: 0;
 }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 .hero,
 .proyectos,
 .mas {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
 body {
     font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     background-image: linear-gradient(to top, var(--rosaclaro) 0%, var(--grisclaro) 100%);
 }
+
 /*Utilidades.....................*/
 .w-sm-100 {
     width: 100%;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
+
 a {
     text-decoration: none;
 }
+
+.a-color {
+    color: #240e4b;
+    font-weight: 400;
+}
+
 .sombra {
     box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     background-color: var(--grisclaro);
@@ -60,23 +73,19 @@ a {
     text-align: center;
     border: 1.5px solid var(--grisclaro);
 }
+
 @media (max-width: 320px) {
     .boton {
         padding: 1rem 2rem;
         border: none;
     }
 }
+
 .boton-sobre-mi {
-    color: var(--grisclaro);
-    background-color: var(--violeta);
-    padding: 1rem 2.4rem;
-    margin-left: min(5rem, 1vw);
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 5rem;
-    width: 80%;
-    text-align: center;
+    color: #353637;
+    border: 1.5px solid var(--gris);
 }
+
 .boton-sm {
     color: var(--grisclaro);
     text-transform: uppercase;
@@ -90,10 +99,11 @@ a {
     font-weight: bolder;
     background-color: rgb(0 0 0 /20%);
 }
-.boton-sobre-mi:hover {
+
+.boton-sobre-mi:hover,
+.a-color:hover {
     cursor: pointer;
     font-weight: bolder;
-    background-color: #240e4bbb;
 }
 
 /*tamaños de fuente.................*/
@@ -102,27 +112,32 @@ h1 {
     margin-left: min(5rem, 1vw);
     font-weight: lighter;
 }
+
 h1 span {
     font-size: clamp(2.4rem, 5vw, 6rem);
     font-weight: bold;
     text-transform: uppercase;
 }
+
 h2 {
-    font-size: clamp(1.8rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 3vw, 4rem);
     font-weight: 800;
     text-transform: uppercase;
     margin-left: min(5rem, 1vw);
     margin-bottom: 2rem;
 }
+
 h3 {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 400;
 }
+
 h4 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 400;
     margin: 2rem auto;
 }
+
 p {
     font-size: clamp(1.4rem, 5vw, 1.8rem);
     font-weight: 400;
@@ -142,6 +157,7 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
 }
+
 @media (max-width: 768px) {
     .navegacion-principal {
         flex-direction: column;
@@ -152,24 +168,29 @@ h4 {
         transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
     }
 }
+
 .navegacion-principal a {
     color: var(--violeta);
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem;
 }
+
 .navegacion-principal a:hover {
     font-weight: 600;
-    background-color: #240e4b38;
+    background-color: #f590b24a;
 }
+
 @media (min-width: 769px) {
     .mobile-menu {
         display: none;
     }
 }
+
 .mobile-menu img {
     width: 4rem;
 }
+
 .mostrar {
     visibility: visible;
     opacity: 1;
@@ -178,44 +199,43 @@ h4 {
 
 /*Hero.............................*/
 .hero {
-    background-image: url(../imagenes/background-galaxia-yulia-min.jpg);
+    background-image: url(../imagenes/mar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 90rem;
+    height: 70rem;
     color: #fafafa;
     position: relative;
     margin-bottom: 2rem;
 }
-.contenido-hero  {
+
+.contenido-hero {
     position: absolute;
-    background-color: rgb(0 0 0 /60%);
+    background-color: rgb(0 0 0 /55%);
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-auto-rows: 30rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 50%));
     padding: max(10vw, 2rem);
 }
-@media (max-width: 768px) {
-    .contenido-hero {
-        grid-auto-rows: 25rem;
-        grid-template-columns: repeat(auto-fit, minmax(min(102%, 31rem), 51%));
-    }
-}
+
 @media (max-width: 500px) {
+    .hero {
+        height: 50rem;
+    }
+
     .contenido-hero {
-/*         grid-template-columns: repeat(auto-fit, minmax(min(102%, 31rem), 51%)); */
+        /*         grid-template-columns: repeat(auto-fit, minmax(min(102%, 31rem), 51%)); */
         padding: max(15vw, 2rem);
     }
 }
+
 @media (max-width: 185px) {
     .contenido-hero {
         grid-auto-rows: 30rem;
         padding: max(1vw, 1rem);
     }
 }
-.astronauta {
+
+/* .astronauta {
     width: max(400px, 100%);
 }
 @media (max-width: 500px) {
@@ -233,12 +253,13 @@ h4 {
         width: max(150px, 100%);
     }
 } 
-
+ */
 .titulo-yulia {
     font-family: 'Dawning of a New Day', cursive;
     color: var(--grisclaro);
     animation-duration: 10s;
 }
+
 .titulo {
     font-family: 'Titillium Web', sans-serif;
 }
@@ -247,6 +268,7 @@ h4 {
 #proyectos {
     min-height: 25rem;
 }
+
 .proyecto {
     display: flex;
     align-items: center;
@@ -254,11 +276,13 @@ h4 {
     padding: 3rem 2rem 6rem 2rem;
     gap: 2rem;
 }
+
 .img-proyecto-sm:hover {
     box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.39);
     background-color: var(--grisclaro);
     border-radius: 1rem;
 }
+
 @media (max-width: 768px) {
     .proyecto {
         flex-wrap: wrap;
@@ -267,23 +291,28 @@ h4 {
         padding-bottom: 3rem;
         gap: 2rem;
     }
+
     .fd-r {
         flex-direction: column-reverse;
     }
 }
+
 .proyecto img {
     margin: auto;
     border-radius: 2rem;
 }
+
 @media (min-width: 768px) {
     .proyectos {
         display: flex;
         margin: 0 auto;
     }
+
     .img-proyecto-sm {
         max-width: 100%;
     }
 }
+
 @media (max-width: 768px) {
     #proyectos {
         display: flex;
@@ -292,9 +321,11 @@ h4 {
         margin: 0 auto;
         gap: 1rem;
     }
+
     .img-proyecto-sm {
         max-width: 100%;
     }
+
     .proyecto img {
         border-radius: 1rem;
     }
@@ -310,11 +341,13 @@ h4 {
     justify-items: center;
     padding: min(5rem, 1vw);
 }
+
 @media (max-width: 613px) {
-    .skills{
-    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+    .skills {
+        grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
     }
 }
+
 .skills img {
     margin: 1rem;
     width: min(6rem, 30vw);
@@ -325,40 +358,22 @@ h4 {
     margin-right: 1rem;
 }
 
-/*Sección Sobre mi..................*/
-.titulo-sobre-mi {
-    font-family: 'Dawning of a New Day', cursive;
-    margin: 0;
-}
-.subtitulo {
-    margin: 0;
-}
-.sobre-mi {
-    position: absolute;
-    background-color: rgb(0 0 0 /60%);
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.sobre-mi h3 {
-    color: var(--grisclaro);
-    text-align: left;
-}
 
 /*Footer...............*/
 .footer {
     text-align: center;
-    color: var(--rosaclaro);
     letter-spacing: 1pt;
     margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--violeta);
+    padding: 3.5rem;
+    background-color: #fafafa;
+    color: #240e4b;
+    height: 4rem;
 }
+
 .sm {
-margin: 0;
+    margin: 0;
 }
+
 .menuFooter {
     flex-direction: row;
     justify-content: space-between;
@@ -366,6 +381,7 @@ margin: 0;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .menuFooter a {
     color: var(--violeta);
     font-weight: 500;
@@ -373,9 +389,11 @@ margin: 0;
     padding: 1rem;
     max-height: 7vh;
 }
+
 .menuFooter a:hover {
     font-weight: 600;
 }
+
 @media (max-width: 768px) {
     .menuFooter {
         display: flex;
@@ -383,41 +401,37 @@ margin: 0;
         align-items: center;
     }
 }
-/*Página sobre mi........................*/
-.hero-sm {
-    background-image: url(../imagenes/background-galaxia-yulia-min.jpg);
-    background-size: cover;
-    height: 110rem;
-    color: #fafafa;
-    position: relative;
-    margin-bottom: 2rem;
-}
 
+/*Página sobre mi........................*/
 #mas {
     margin: 0 auto;
-    width: auto;  
+    width: auto;
 }
+
 .mas {
     display: flex;
     align-items: center;
     margin: 0 auto;
     padding: clamp(0em, 4vw, 2em);
 }
+
 @media (max-width: 768px) {
     .mas {
         flex-direction: column;
         text-align: center;
     }
 }
+
 .descripcion-sobre-mi h4 {
     text-align: left;
-    margin-left: 1rem;
 }
+
 @media (max-width: 768px) {
     .descripcion-sobre-mi h4 {
         text-align: center;
     }
 }
+
 .menuSM {
     margin: 1rem;
     color: var(--violeta);
@@ -426,6 +440,7 @@ margin: 0;
     display: flex;
     justify-content: center;
 }
+
 .menuSM a:hover {
     color: #353637;
     font-weight: 600;

@@ -40,16 +40,16 @@
         <div class="contenido-hero">
             <div class="w-sm-100">
                 <h1 class="titulo-yulia"> Yulia Monti
-                    <br><span class="titulo contenedor"> Web Developer</span>
+                    <br><span class="titulo contenedor"> Nomada Digital</span>
                 </h1>
-                <h2> Front End</h2>
+                <h2> Front End Developer</h2>
+                <h2> Community Manager</h2>
                 <a href="http://www.linkedin.com/in/yuliamonti" class="boton" target="_blank"> Contactar </a>
             </div>
-
-            <div>
+            <!--   <div>
                 <a href="./html/sobre-mi.html"> <img src="imagenes/yuAstronauta.png" width="400"
                         alt="Astronauta con la cara de Yulia, link sobre-mi" class="astronauta"></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -58,9 +58,18 @@
             <h3>Proyectos</h3>
             <div id="proyectos">
 
-
+                <section data-aos="fade-up" class="proyecto contenedor fd-r w-sm-100">
+                    <div class="contenedor descripcionProyecto">
+                        <h4>Mindo, Ecuador</h4>
+                        <p>Web Site sobre Mindo, Ecuador</p>
+                        <p>Sitio Web con información para ayudar a los turistas que quieren conocer Mindo utilizando
+                            Html, Css y Js.</p>
+                    </div>
+                    <a href="https://mindo-ecuador.netlify.app/" target="_blank">
+                        <img class="img-proyecto-sm" src="imagenes/mindo-web.png" width="500"
+                            alt="Landing pages Mindo, Ecuador"></a>
+                </section>
                 <section data-aos="fade-up" class="proyecto contenedor w-sm-100">
-
                     <a href="https://imperfecta-cosmetica-natural.netlify.app/" target="_blank">
                         <img class="img-proyecto-sm" src="imagenes/cap-imperfecta-png.png" width="500"
                             alt="Imperfecta Cosmética Natural">
@@ -145,6 +154,7 @@
             <img src="imagenes/css.png" width="60" alt="Logotipo de CSS">
             <img src="imagenes/javascript.png" width="60" alt="Logotipo de JavaScript">
             <img src="imagenes/react.png" width="60" alt="Logotipo de React Js">
+            <img src="imagenes/chatgpt-icon.png" width="60" alt="Logotipo de Chat GPT">
             <img src="imagenes/php.png" width="60" alt="Logotipo de PHP">
             <img src="imagenes/wordpress.png" width="60" alt="Logotipo de WordPress">
             <img src="imagenes/sass.png" width="60" alt="Logotipo de Sass">
@@ -170,16 +180,17 @@
 
     <section id="mas">
         <div class="mas contenedor w-sm-100">
-            <div class="contenedor descripcion-sobre-mi w-sm-100">
-                <h4 data-aos="fade-left"> ¿Querés saber más sobre mi?</h4>
-                <a href="./html/sobre-mi.html" class="boton-sobre-mi"> Click Aquí </a>
-                <h4 data-aos="fade-left"> O contactame</h4>
-                <a href="http://www.linkedin.com/in/yuliamonti" class="boton-sobre-mi" target="_blank"> Click Aquí </a>
+            <div class="contenedor descripcion-sobre-mi">
+                <h4> Contacto</h4>
+                <b><a class="a-color" href="mailto:yuliamonti@gmail.com" target="_blank"> yuliamonti@gmail.com </a></b>
+                <br><b><a class="a-color" href="https://yuliamonti.github.io/yuliamonti/" target="_blank"> Portfolio
+                    </a></b>
+                <br><b><a class="a-color" href="https://www.linkedin.com/in/yuliamonti" target="_blank">
+                        Linkedin</a></b>
             </div>
 
             <div>
-                <a href="./html/sobre-mi.html"> <img data-aos="zoom-in"
-                        src="imagenes/yuAstronauta-abstract-removebg.png"
+                <a href="./html/sobre-mi.html"> <img data-aos="zoom-in" src="imagenes/yuAstronauta.png"
                         alt="Ilustración de astronauta con la cara de Yulia" width="400"
                         class="astronauta-saber-mas"></a>
             </div>
@@ -195,8 +206,8 @@
             <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank"> Linkedin </a>
         </nav>
     </div>
-    <footer class="footer">
-        <p> &copy; Yulia Monti 2022 </p>
+    <footer class="footer" id="footer">
+        <p> &copy; Yulia Monti - <span id="fecha"></span>.</p>
     </footer>
 
     <script src="js/app.js"></script>
