@@ -2,9 +2,7 @@
 <h2 align="center">Desarrolladora Front End, Futura Full Stack</h2>
 
 ## 💫 Sobre mi:
-🔸Estudiante de Desarrollo Full Stack en CoderHouse y Soy Henry. <br>
 🔸Estudios finalizados: "Desarrollo Web, JavasCript, React Js": HTML5, CSS3, SASS, Git, GitHub, Bootstrap, Firebase, SEO, Wordpress, Google Ads, Marketing Digital".<br>
-🔸En fila: "PHP, POO - MVC, MySQL - SQL y API's, Backend".
 <br>
 
 
@@ -32,7 +30,6 @@
 
 :octocat: **https://github.com/yuliamonti**
 
-:open_file_folder: CV: **https://drive.google.com/file/d/1q_Pg91vE0HJ7C9y481pSn5qBvhZ93pB5/view?usp=share_link**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/yuliamonti) 
 
