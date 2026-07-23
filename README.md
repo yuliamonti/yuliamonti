@@ -1,7 +1,5 @@
 <div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00a7a9&height=200&section=header&text=Yulia%20Monti&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Desarrolladora%20web%20especializada%20en%20salud%20%E2%80%94%20LATAM%20%26%20Espa%C3%B1a&descAlignY=58&descColor=7fdbff&descSize=16" />
-
 </div>
 
 ---
@@ -26,12 +24,19 @@ El diferencial: entiendo el lenguaje médico, la lógica del paciente que busca 
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=wordpress&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Netlify](https://img.shields.io/badge/Netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 ![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Gulp](https://img.shields.io/badge/Gulp-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Photoshop](https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
+![Google Ads](https://img.shields.io/badge/Google%20Ads-%234285F4.svg?style=for-the-badge&logo=googleads&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
@@ -49,10 +54,12 @@ El diferencial: entiendo el lenguaje médico, la lógica del paciente que busca 
 
 ### Doshas Nutrición — Barcelona & Chile
 **[doshasnutricion.com](https://doshasnutricion.com)**
+
 Nutricionista especializada en SIBO, microbiota e inflamación intestinal. Lighthouse 100/100. Pasarela Stripe integrada con dos monedas (€ y CLP). Schema: `MedicalBusiness` + `Nutritionist` + `FAQPage` + `AggregateRating`. Core Web Vitals en verde. De web inactiva a reservas automáticas sin intermediarios.
 
 ### La Góndola Hostería — Ecuador
 **[lagondolaecuador.com](https://lagondolaecuador.com)**
+
 Optimización técnica WPO completa. De 48/100 a 100/100 en Lighthouse. De 6–8 segundos a 2.5 segundos de carga. Sistema de reservas reconstruido desde cero.
 
 ### Demos médicas — Portfolio técnico
