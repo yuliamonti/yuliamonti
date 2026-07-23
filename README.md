@@ -1,16 +1,14 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00a7a9&height=200&section=header&text=Yulia%20Monti&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Desarrolladora%20web%20especializada%20en%20salud%20%E2%80%94%20LATAM%20%26%20Espa%C3%B1a&descAlignY=58&descColor=7fdbff&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00a7a9&height=200&section=header&text=Yulia%20Monti&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Precision%20quirurgica%20aplicada%20al%20codigo&descAlignY=58&descColor=7fdbff&descSize=16" />
 </div>
 
 ---
 
-## Quién soy
+## Cirujana Digital
 
-**15 años en quirófano.** Instrumentadora quirúrgica reconvertida en desarrolladora web.
+15 años en quirófano como instrumentadora quirúrgica. Hoy diseño infraestructura digital médica: presencia web, velocidad, SEO, GEO/AEO, entidades, automatización y experiencia del paciente como un único sistema.
 
-Hoy construyo páginas para médicos, clínicas y profesionales de salud que **aparecen en Google, cargan en menos de 2 segundos y convierten visitas en turnos reales.** Sin WordPress. Sin plantillas. Código limpio que da Lighthouse 100/100.
-
-El diferencial: entiendo el lenguaje médico, la lógica del paciente que busca especialista online y la importancia crítica de la credibilidad en salud. Ninguna agencia generalista tiene ese contexto.
+No hago webs bonitas. Construyo el sistema que un médico necesita para que un paciente lo encuentre a las 11 de la noche desde el celular, confíe y agende.
 
 → **[cirujanadigital.com](https://cirujanadigital.com)**
 
@@ -32,64 +30,76 @@ El diferencial: entiendo el lenguaje médico, la lógica del paciente que busca 
 ![Netlify](https://img.shields.io/badge/Netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 ![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-%233ECF8E.svg?style=for-the-badge&logo=supabase&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![Gulp](https://img.shields.io/badge/Gulp-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-%23EA4B71.svg?style=for-the-badge&logo=n8n&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-%23F38020.svg?style=for-the-badge&logo=cloudflare&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=canva&logoColor=white)
 ![Photoshop](https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 ![Google Ads](https://img.shields.io/badge/Google%20Ads-%234285F4.svg?style=for-the-badge&logo=googleads&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
-**Especialidades en web médica:**
+**Agentes de IA / herramientas de desarrollo**
+`Claude (Anthropic)` `OpenCode` `Gemini API`
+
+**Especialidades — Web médica**
 - Schema markup médico: `Physician`, `MedicalBusiness`, `LocalBusiness`, `FAQPage`, `AggregateRating`
 - Core Web Vitals — LCP <1s, CLS 0, TBT 0ms
 - SEO local por especialidad y ciudad
 - Optimización WPO con garantía Lighthouse 90+ o reembolso
 - Presencia en IA: estrategia de visibilidad en ChatGPT, Perplexity y Google AI Overviews
 
+**Especialidades — Automatización médica**
+- Sistema Anti-NoShows: recordatorios automáticos por WhatsApp, confirmación de turnos, reducción de ausencias (n8n + WhatsApp Business API + Supabase)
+- Recepcionista Virtual Médica: atención 24/7, captura de datos, clasificación de consultas y derivación a humano (Claude API / Gemini + n8n)
+- Arquitectura de bots corriendo en VPS propio (Contabo) — Evolution API + Supabase como base de datos operativa
+
 ---
 
-## Proyectos en producción
+## Sistemas en producción
 
-### Doshas Nutrición — Barcelona & Chile
-**[doshasnutricion.com](https://doshasnutricion.com)**
+**cirujanadigital.com** — sitio propio, estático, sin CMS. Lighthouse 90+, Schema completo, blog técnico y demos por especialidad médica.
 
-Nutricionista especializada en SIBO, microbiota e inflamación intestinal. Lighthouse 100/100. Pasarela Stripe integrada con dos monedas (€ y CLP). Schema: `MedicalBusiness` + `Nutritionist` + `FAQPage` + `AggregateRating`. Core Web Vitals en verde. De web inactiva a reservas automáticas sin intermediarios.
+**[doshasnutricion.com](https://doshasnutricion.com)** — Nutricionista, Barcelona/Chile. Lighthouse 100/100. Stripe multi-moneda. Schema `MedicalBusiness` + `FAQPage`.
 
-### La Góndola Hostería — Ecuador
-**[lagondolaecuador.com](https://lagondolaecuador.com)**
+**[lagondolaecuador.com](https://lagondolaecuador.com)** — Hostería, Ecuador. Migración WordPress → estático. De 48 a 100 en Lighthouse.
 
-Optimización técnica WPO completa. De 48/100 a 100/100 en Lighthouse. De 6–8 segundos a 2.5 segundos de carga. Sistema de reservas reconstruido desde cero.
+**[oceanichosteria.com](https://oceanichosteria.com)** — Hostería, Puerto López, Ecuador. Sitio bilingüe (es/en), Schema `LodgingBusiness` + `Hotel` + `FAQPage`, Lighthouse 90+ mobile y desktop.
 
-### Demos médicas — Portfolio técnico
-
-| Especialidad | Demo |
-|---|---|
-| Anestesiólogo | [Ver demo](https://cirujanadigital.com/pagina-web-medico-anestesiologo/) |
-| Cardiólogo | [Ver demo](https://cirujanadigital.com/pagina-web-para-cardiologo/) |
-| Dermatóloga | [Ver demo](https://cirujanadigital.com/pagina-web-dermatologa/) |
-| Doula | [Ver demo](https://cirujanadigital.com/pagina-web-para-doula/) |
-| Obstetra | [Ver demo](https://cirujanadigital.com/pagina-web-para-obstetra/) |
-| Odontólogo | [Ver demo](https://cirujanadigital.com/pagina-web-para-odontologo/) |
-| Oftalmólogo | [Ver demo](https://cirujanadigital.com/diseno-web-para-oftalmologo/) |
-
-Todos con Lighthouse 400/400. Schema médico completo. Core Web Vitals en verde.
+**Demos médicas** — landings indexables por especialidad (obstetricia, odontología, oftalmología, anestesiología, cardiología, dermatología, doula, traumatología). Schema `Physician` completo en todas.
+→ [Ver demos](https://cirujanadigital.com/demos-medicas/)
 
 ---
 
 ## Servicios
 
-| Servicio | Precio | Entrega |
-|---|---|---|
-| Landing Page Médica | desde $250 USD | 2–3 semanas |
-| Pack Presencia Digital (web + Maps + WhatsApp) | $400 USD | 7 días |
-| Sitio Corporativo para clínicas | desde $750 USD | 3–4 semanas |
-| Optimización WPO | desde $200 USD | 3–5 días hábiles |
-| Auditoría de IA Médica | $100 USD | 3 días hábiles |
-| Plan Presencia en IA | $250 USD | 7 días |
-| Mantenimiento Estándar | $85 USD/mes | — |
-| Mantenimiento Pro + IA | $150 USD/mes | — |
+**Presencia digital**
+- Sistema de Activación Digital (GBP + Landing + WhatsApp) — $400 USD
+- Landing Médica — desde $250 USD
+- Sitio Corporativo — desde $750 USD
+
+**Rendimiento**
+- Optimización WPO Esencial — $180 USD
+- Optimización WPO Completa — $320 USD
+
+**Visibilidad en IA**
+- Auditoría de Presencia en IA — $100 USD
+- Auditoría + Plan de Acción — $220 USD
+- Implementación (3 meses) — $250 USD/mes
+
+**Automatización médica**
+- Sistema Anti-Ausencias (n8n + WhatsApp API + Supabase) — $250 + $85/mes
+- Recepcionista Virtual Médica (IA generativa + WhatsApp) — $250 + $50/mes
+
+**Mantenimiento**
+- Estándar — $85 USD/mes
+- Pro + IA — $150 USD/mes
+
+→ [Ver catálogo completo](https://cirujanadigital.com/servicios/)
 
 ---
 
