@@ -9,9 +9,7 @@
     <title>Yulia Monti — Full-Stack Developer & Automatización con IA</title>
     <meta name="description"
         content="Full-Stack Developer con 5 años construyendo producto en producción. React, Node.js, automatización con IA (Claude, Gemini, n8n), SEO técnico. Disponible remoto o relocación.">
-    <meta property="og:title" content="Yulia Monti — Full-Stack Developer & Automatización con IA">
-    <meta property="og:description" content="React · Node.js · n8n · LLM Integration · SEO Técnico.">
-    <link rel="icon" href="imagenes/yulia-monti.webp" type="image/png">
+    <link rel="icon" href="imagenes/yulia-monti.webp" type="image/webp">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Yulia Monti — Frontend Developer">
@@ -103,15 +101,72 @@
 
     <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Yulia Monti",
-  "url":"https://yuliamonti.github.io/yuliamonti/",
-  "image":"https://yuliamonti.github.io/yuliamonti/imagenes/yulia-monti.webp",
-  "jobTitle":"Full-Stack Developer",
-  "description":"Full-Stack Developer con 5 años construyendo producto en producción. React, Node.js, automatización con IA (Claude, Gemini, n8n), SEO técnico. Disponible remoto o relocación.",
-  "email":"yuliamonti@gmail.com",
-  "sameAs":["https://www.linkedin.com/in/yuliamonti/","https://github.com/yuliamonti"]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yuliamonti.github.io/yuliamonti/#person",
+      "name": "Yulia Monti",
+      "url": "https://yuliamonti.github.io/yuliamonti/",
+      "image": "https://yuliamonti.github.io/yuliamonti/imagenes/yulia-monti.webp",
+      "jobTitle": "Full-Stack Developer",
+      "description": "Full-Stack Developer con 5 años construyendo producto en producción. React, Node.js, automatización con IA (Claude, Gemini, n8n), SEO técnico. Disponible remoto o relocación.",
+      "email": "mailto:yuliamonti@gmail.com",
+      "knowsAbout": ["React", "Node.js", "NestJS", "JavaScript", "Automatización con IA", "n8n", "Claude API", "Gemini API", "SEO Técnico", "Schema.org", "Core Web Vitals"],
+      "worksFor": { "@type": "Organization", "name": "Cirujana Digital", "url": "https://cirujanadigital.com" },
+      "sameAs": ["https://www.linkedin.com/in/yuliamonti/", "https://github.com/yuliamonti", "https://cirujanadigital.com"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yuliamonti.github.io/yuliamonti/#website",
+      "url": "https://yuliamonti.github.io/yuliamonti/",
+      "name": "Yulia Monti — Portfolio",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://yuliamonti.github.io/yuliamonti/#proyectos",
+      "name": "Proyectos 2025–2026",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": {
+          "@type": "CreativeWork", "name": "Cirujana Digital",
+          "description": "Sitio de marca propia. HTML/CSS/JS estático sin CMS. Lighthouse 100, Schema completo, captación de pacientes en LATAM.",
+          "url": "https://github.com/cirujanadigital/cirujanadigital",
+          "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-cirujana-digital.webp",
+          "dateCreated": "2025", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+          "keywords": "HTML, CSS, JS, SEO Técnico, Schema" } },
+        { "@type": "ListItem", "position": 2, "item": {
+          "@type": "CreativeWork", "name": "Rebio Clinique",
+          "description": "Landing en React para clínica GLP-1. Calculadora de IMC, simulador de elegibilidad y tracker de dosis con custom hooks.",
+          "url": "https://github.com/cirujanadigital/rebio-clinique",
+          "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-rebio-clinique.webp",
+          "dateCreated": "2026", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+          "keywords": "React, Vite, Custom Hooks" } },
+        { "@type": "ListItem", "position": 3, "item": {
+          "@type": "CreativeWork", "name": "Sistema Anti No-Shows",
+          "description": "Bot de WhatsApp para consultorios médicos. Recordatorios automáticos y clasificación de respuestas con IA generativa.",
+          "url": "https://github.com/cirujanadigital/sistema-anti-noshows",
+          "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-anti-no-shows.webp",
+          "dateCreated": "2026", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+          "keywords": "n8n, Gemini API, Supabase" } },
+        { "@type": "ListItem", "position": 4, "item": {
+          "@type": "CreativeWork", "name": "Juliette Astróloga",
+          "description": "Demo de portfolio con glassmorphism, CSS crítico inline y marcado Schema.org.",
+          "url": "https://github.com/cirujanadigital/juliette-astrologa",
+          "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-juliette-astrologa.webp",
+          "dateCreated": "2025", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+          "keywords": "HTML, CSS, JS, Schema" } },
+        { "@type": "ListItem", "position": 5, "item": {
+          "@type": "CreativeWork", "name": "Experiencia Flúor",
+          "description": "Landing de conversión para talleres de pintura fluorescente en Rosario. Dark theme neón, CTAs de WhatsApp por paquete y CSS puro sin dependencias.",
+          "url": "https://github.com/cirujanadigital/fluor-experiencia",
+          "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-experiencia-fluor.webp",
+          "dateCreated": "2026", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+          "keywords": "HTML, CSS, JS, WPO" } }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -148,8 +203,10 @@
                 </p>
                 <div class="hero-ctas">
                     <a href="#proyectos-2026" class="btn-primary">Ver proyectos</a>
-                    <a href="mailto:yuliamonti@gmail.com" class="btn-ghost">Contactar</a>
-
+                    <a href="mailto:yuliamonti@gmail.com?subject=..." class="btn-ghost">Contactar</a>
+                    <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank" rel="noopener" class="btn-lin">
+                        <img src="imagenes/linkedin.webp" width="50" height="50" alt="" loading="eager">
+                    </a>
                 </div>
             </div>
             <img src="imagenes/yulia-monti.webp" alt="Yulia Monti, Frontend Developer" class="hero-foto" width="280"
@@ -287,17 +344,18 @@
 
             <article class="proyecto-item proyecto-item--legacy fade-up">
                 <div class="proyecto-img">
-                    <img src="imagenes/gif-app-img.webp" alt="App buscadora de GIFs" loading="lazy">
+                    <img src="imagenes/gif-api.webp" alt="App buscadora de GIFs" loading="lazy">
                 </div>
                 <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2022</p>
+                    <p class="proyecto-eyebrow">2022 · Proyecto de práctica</p>
                     <h3 class="proyecto-titulo">Gif App</h3>
-                    <p class="proyecto-desc">Buscador de GIFs por categoría. Testing con Jest e integración de API
-                        externa.</p>
+                    <p class="proyecto-desc">Buscador de GIFs por categoría con integración de API externa. Primer
+                        proyecto con React — modernizado en 2026 (Vite 5, manejo de errores, buenas prácticas de
+                        seguridad).</p>
                     <div class="proyecto-tags">
                         <span class="tag">React</span>
                         <span class="tag">Vite</span>
-                        <span class="tag">Jest</span>
+                        <span class="tag">Fetch API</span>
                     </div>
                     <a href="https://yuliamonti.github.io/gif-api/" target="_blank" rel="noopener"
                         class="proyecto-link">Ver proyecto</a>
@@ -341,14 +399,15 @@
                 <div class="proyecto-texto">
                     <p class="proyecto-eyebrow">2025</p>
                     <h3 class="proyecto-titulo">Cirujana Digital</h3>
-                    <p class="proyecto-desc">Sitio de marca propia. HTML/CSS/JS estático sin CMS. Lighthouse 90+, Schema
+                    <p class="proyecto-desc">Sitio de marca propia. HTML/CSS/JS estático sin CMS. Lighthouse 100, Schema
                         completo, captación de pacientes en LATAM.</p>
                     <div class="proyecto-tags">
                         <span class="tag">HTML/CSS/JS</span>
                         <span class="tag">SEO Técnico</span>
                         <span class="tag">Schema</span>
                     </div>
-                    <a href="https://github.com/yuliamonti" target="_blank" rel="noopener" class="proyecto-link">Ver en
+                    <a href="https://github.com/cirujanadigital/cirujanadigital" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver en
                         GitHub</a>
                 </div>
             </article>
@@ -368,7 +427,8 @@
                         <span class="tag">Vite</span>
                         <span class="tag">Custom Hooks</span>
                     </div>
-                    <a href="https://github.com/yuliamonti" target="_blank" rel="noopener" class="proyecto-link">Ver en
+                    <a href="https://github.com/cirujanadigital/rebio-clinique" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver en
                         GitHub</a>
                 </div>
             </article>
@@ -388,68 +448,52 @@
                         <span class="tag">Gemini API</span>
                         <span class="tag">Supabase</span>
                     </div>
-                    <a href="https://cirujanadigital.com/servicios/sistema-anti-no-shows-clinicas/" target="_blank"
-                        rel="noopener" class="proyecto-link">Ver en
-                        GitHub</a>
+                    <a href="https://github.com/cirujanadigital/sistema-anti-noshows" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver en GitHub</a>
                 </div>
             </article>
 
             <article class="proyecto-item fade-up">
                 <div class="proyecto-img">
-                    <img src="imagenes/proyecto-juliette-astrologa.webp" alt="Juliette Astróloga, landing de conversión"
+                    <img src="imagenes/proyecto-juliette-astrologa.webp" alt="Juliette Astróloga, demo de portfolio"
                         loading="lazy">
                 </div>
                 <div class="proyecto-texto">
                     <p class="proyecto-eyebrow">2025</p>
                     <h3 class="proyecto-titulo">Juliette Astróloga</h3>
-                    <p class="proyecto-desc">Landing de conversión con glassmorphism, CSS crítico inline, Schema.org y
-                        dark theme nativo.</p>
+                    <p class="proyecto-desc">Demo de portfolio con glassmorphism, CSS crítico inline y
+                        marcado Schema.org.</p>
                     <div class="proyecto-tags">
                         <span class="tag">HTML/CSS/JS</span>
                         <span class="tag">Schema</span>
                     </div>
-                    <a href="https://github.com/yuliamonti" target="_blank" rel="noopener" class="proyecto-link">Ver en
+                    <a href="https://github.com/cirujanadigital/juliette-astrologa" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver en
                         GitHub</a>
                 </div>
             </article>
 
             <article class="proyecto-item fade-up">
                 <div class="proyecto-img">
-                    <img src="imagenes/proyecto-fluor-experiencia.webp"
-                        alt="Flúor Experiencia, landing para talleres UV en Rosario" loading="lazy">
+                    <img src="imagenes/proyecto-experiencia-fluor.webp"
+                        alt="Experiencia Flúor, landing de conversión para talleres de pintura UV en Rosario"
+                        loading="lazy">
                 </div>
                 <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2025</p>
-                    <h3 class="proyecto-titulo">Flúor Experiencia</h3>
-                    <p class="proyecto-desc">Landing para talleres UV en Rosario. Dark mode nativo, funnel de WhatsApp y
-                        mobile-first.</p>
+                    <p class="proyecto-eyebrow">2026</p>
+                    <h3 class="proyecto-titulo">Experiencia Flúor</h3>
+                    <p class="proyecto-desc">Landing de conversión para talleres de pintura fluorescente en Rosario.
+                        Dark theme neón, CTAs de WhatsApp por paquete y CSS puro sin dependencias.</p>
                     <div class="proyecto-tags">
                         <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">Dark Mode</span>
+                        <span class="tag">WPO</span>
                     </div>
-                    <a href="https://github.com/yuliamonti" target="_blank" rel="noopener" class="proyecto-link">Ver en
+                    <a href="https://github.com/cirujanadigital/fluor-experiencia" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver en
                         GitHub</a>
                 </div>
             </article>
 
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-jardin-tierra-verde.webp"
-                        alt="Jardín Tierra Verde, web para empresa de paisajismo en Quito" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2025</p>
-                    <h3 class="proyecto-titulo">Jardín Tierra Verde</h3>
-                    <p class="proyecto-desc">Web para empresa de paisajismo en Quito. Catálogo interactivo, SEO local y
-                        arquitectura estática ultrarrápida.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">SEO Local</span>
-                    </div>
-                    <a href="https://github.com/yuliamonti" target="_blank" rel="noopener" class="proyecto-link">Ver en
-                        GitHub</a>
-                </div>
-            </article>
 
         </div>
     </section>
@@ -496,9 +540,6 @@
                     width="100" height="100" loading="lazy">
             </div>
             <div class="footer-links">
-                <a href="mailto:yuliamonti@gmail.com" class="footer-link">
-                    yuliamonti@gmail.com
-                </a>
                 <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank" rel="noopener" class="footer-link">
                     LinkedIn
                 </a>
@@ -508,7 +549,8 @@
                 <a href="https://cirujanadigital.com" target="_blank" rel="noopener" class="footer-link">
                     cirujanadigital.com
                 </a>
-                <a href="mailto:yuliamonti@gmail.com" target="_blank" rel="noopener" class="footer-link footer-cv">
+                <a href="mailto:yuliamonti@gmail.com?subject=Contacto%20desde%20tu%20portfolio&body=Hola%20Yulia%2C%20te%20escribo%20desde..."
+                    target="_blank" rel="noopener" class="footer-link footer-cv">
                     Contactar
                 </a>
 

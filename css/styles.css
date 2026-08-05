@@ -262,6 +262,13 @@ header {
   background: rgba(245, 144, 178, 0.08);
   transform: translateY(-2px);
 }
+.btn-lin {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-lin:hover {
+  transform: translateY(-2px);
+}
 .hero-foto {
   width: clamp(20rem, 24vw, 32rem);
   height: clamp(20rem, 24vw, 32rem);
@@ -492,7 +499,7 @@ section > h2,
   border-radius: 1.6rem;
   overflow: hidden;
   aspect-ratio: 3/4;
-  max-width: 32rem;
+  max-width: 30rem;
   background: #fff;
 }
 .sobre-mi-img img {
@@ -538,7 +545,7 @@ section > h2,
     grid-template-columns: 1fr;
   }
   .sobre-mi-img {
-    max-width: 32rem;
+    max-width: 20rem;
     margin: 0 auto;
   }
 }
