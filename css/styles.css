@@ -3,6 +3,7 @@
   --violeta-2: #3d1575;
   --rosa: #f590b2;
   --rosa-dark: #e26f96;
+  --rosa-text: #b23268; 
   --gris: #353637;
   --grisclaro: #faf9f7;
   --rosaclaro: #f3eef2;
@@ -326,7 +327,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--rosa-dark);
+  color: var(--rosa-text);
   margin-bottom: 0.8rem;
 }
 section > h2,
@@ -348,6 +349,26 @@ section > h2,
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
   text-align: center;
 }
+/* ── Subtítulos de categoría dentro de "Proyectos" ──── */
+.proyectos-subhead {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  text-align: left;
+  margin: 0 auto clamp(2.4rem, 4vw, 3.2rem);
+  padding-top: clamp(1rem, 2vw, 2rem);
+  border-top: 1px solid var(--border);
+}
+.section-label--sm {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.proyectos-subhead-desc {
+  font-size: 1.4rem;
+  color: var(--color-text-light, #64748b);
+}
+
 /* ── Lista de proyectos en zigzag ─────────────────── */
 .proyectos-lista {
   display: flex;
@@ -355,7 +376,71 @@ section > h2,
   gap: clamp(6rem, 10vw, 10rem);
   max-width: 110rem;
   margin: 0 auto;
-  padding: 2rem 2.4rem 4rem;
+  padding: 2rem 2.4rem clamp(3rem, 6vw, 5rem);
+}
+
+/* ── Stacks / herramientas técnicas: repos sin interfaz visual ──
+   Deliberadamente distinto del formato "zigzag + screenshot" de
+   .proyecto-item: sin captura de pantalla (sería un screenshot de
+   GitHub, no un producto), tarjeta compacta con badge de stack. ── */
+.stacks-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.4rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0.5rem 2.4rem clamp(3rem, 6vw, 5rem);
+}
+.stack-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 1.6rem;
+  padding: 2.8rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.2s;
+}
+.stack-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stack-item:hover {
+  box-shadow: var(--shadow-hover);
+}
+.stack-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.stack-item-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--violeta);
+  background: var(--rosaclaro);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  letter-spacing: -0.01em;
+}
+.stack-item .proyecto-titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.stack-item .proyecto-desc {
+  max-width: none;
+  font-size: 1.4rem;
+}
+.stack-item .proyecto-link {
+  margin-top: auto;
+  padding-top: 0.4rem;
 }
 
 .proyecto-item {
@@ -405,7 +490,7 @@ section > h2,
 }
 .proyecto-eyebrow {
   font-size: 1.2rem;
-  color: var(--rosa-dark);
+  color: var(--rosa-text);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -434,7 +519,7 @@ section > h2,
 .proyecto-tags .tag {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--rosa-dark);
+  color: var(--rosa-text);
   background: var(--rosaclaro);
   border-radius: 10rem;
   padding: 0.4rem 1.2rem;
@@ -531,7 +616,7 @@ section > h2,
 .sobre-mi-dato .num {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--rosa-dark);
+  color: var(--rosa-text);
   line-height: 1;
   display: block;
   margin-bottom: 0.4rem;
@@ -710,7 +795,7 @@ section > h2,
   padding-top: 2rem;
   border-top: 1px solid rgba(250, 250, 250, 0.1);
   font-size: 1.25rem;
-  color: rgba(250, 250, 250, 0.35);
+  color: rgba(250, 250, 250, 0.6);
   text-align: center;
 }
 
