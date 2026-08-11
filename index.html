@@ -22,15 +22,88 @@
     <link rel="preload" as="image" href="imagenes/yulia-monti.webp" type="image/webp" fetchpriority="high">
     <!-- CSS crítico inline: evita el "flash" antes de que cargue styles.css y pinta el LCP (hero) sin bloqueo extra -->
     <style>
-        :root{--violeta:#240e4b;--rosa:#f590b2;--grisclaro:#faf9f7;--rosaclaro:#f3eef2;--gris:#353637}
-        *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
-        html{font-size:62.5%;scroll-behavior:smooth}
-        body{font-size:1.6rem;font-family:'Titillium Web',system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,var(--grisclaro) 0%,var(--rosaclaro) 100%);background-attachment:fixed;color:var(--gris)}
-        header{position:sticky;top:0;z-index:100;background:rgba(250,250,250,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(36,14,75,.1)}
-        .nav-inner{display:flex;align-items:center;justify-content:space-between;height:6rem;max-width:120rem;margin:0 auto;padding:0 2.4rem}
-        .hero{background:linear-gradient(150deg,#0d0520 0%,#1a0635 40%,#240e4b 70%,#3d1575 100%);position:relative;overflow:hidden;min-height:86vh;display:flex;align-items:center;color:var(--grisclaro)}
-        .hero-inner{position:relative;z-index:1;width:100%;max-width:130rem;margin:0 auto;padding:clamp(4rem,8vw,9rem) 2.4rem;display:grid;grid-template-columns:1.3fr auto;align-items:center;gap:6rem}
-        @media(max-width:768px){.navegacion-principal{display:none}.hero-inner{grid-template-columns:1fr;text-align:center;gap:3.2rem}}
+        :root {
+            --violeta: #240e4b;
+            --rosa: #f590b2;
+            --grisclaro: #faf9f7;
+            --rosaclaro: #f3eef2;
+            --gris: #353637
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-family: 'Titillium Web', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(180deg, var(--grisclaro) 0%, var(--rosaclaro) 100%);
+            background-attachment: fixed;
+            color: var(--gris)
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(250, 250, 250, .85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(36, 14, 75, .1)
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 6rem;
+            max-width: 120rem;
+            margin: 0 auto;
+            padding: 0 2.4rem
+        }
+
+        .hero {
+            background: linear-gradient(150deg, #0d0520 0%, #1a0635 40%, #240e4b 70%, #3d1575 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 86vh;
+            display: flex;
+            align-items: center;
+            color: var(--grisclaro)
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 130rem;
+            margin: 0 auto;
+            padding: clamp(4rem, 8vw, 9rem) 2.4rem;
+            display: grid;
+            grid-template-columns: 1.3fr auto;
+            align-items: center;
+            gap: 6rem
+        }
+
+        @media(max-width:768px) {
+            .navegacion-principal {
+                display: none
+            }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3.2rem
+            }
+        }
     </style>
     <!-- Google Fonts — non-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,7 +233,14 @@
           "url": "https://github.com/cirujanadigital/fluor-experiencia",
           "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-experiencia-fluor.webp",
           "dateCreated": "2026", "creator": {"@id": "https://yuliamonti.github.io/yuliamonti/#person"},
-          "keywords": "HTML, CSS, JS, WPO"}}
+          "keywords": "HTML, CSS, JS, WPO"}},
+          { "@type": "ListItem", "position": 10, "item": {
+            "@type": "CreativeWork", "name": "Landing Boilerplate",
+            "description": "Componentizador de nav y footer en JS puro para sitios estáticos sin build system, con template de Hero que cumple un checklist de 24 puntos de performance y accesibilidad.",
+            "url": "https://github.com/cirujana-digital/landing-boilerplate",
+            "image": "https://yuliamonti.github.io/yuliamonti/imagenes/proyecto-landing-boilerplate.webp",
+            "dateCreated": "2026", "creator": { "@id": "https://yuliamonti.github.io/yuliamonti/#person" },
+            "keywords": "JavaScript, Accesibilidad, WPO, Componentización" } }
       ]
     }
   ]
@@ -186,482 +266,505 @@
         </div>
     </header>
     <main>
-    <!-- ═══ HERO ══════════════════════════════════════════ -->
-    <section class="hero" aria-labelledby="hero-h1">
-        <div class="hero-inner">
-            <div class="hero-texto">
-                <p class="hero-eyebrow">Argentina · Disponible para trabajo remoto</p>
-                <h1 id="hero-h1">Yulia Monti</h1>
-                <p class="hero-sub-role">Full-Stack Developer — Automatización con IA</p>
-                <p class="hero-stack">5 años construyendo producto en producción · React · Node.js · n8n · Claude/Gemini
-                    API
-                </p>
-                <div class="hero-ctas">
-                    <a href="#proyectos-2026" class="btn-primary">Ver proyectos</a>
-                    <a href="mailto:yuliamonti@gmail.com?subject=..." class="btn-ghost">Contactar</a>
-                    <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank" rel="noopener" class="btn-lin"
-                        aria-label="Perfil de Yulia Monti en LinkedIn (se abre en una pestaña nueva)">
-                        <img src="imagenes/linkedin.webp" width="50" height="50" alt="" loading="eager">
-                    </a>
+        <!-- ═══ HERO ══════════════════════════════════════════ -->
+        <section class="hero" aria-labelledby="hero-h1">
+            <div class="hero-inner">
+                <div class="hero-texto">
+                    <p class="hero-eyebrow">Argentina · Disponible para trabajo remoto</p>
+                    <h1 id="hero-h1">Yulia Monti</h1>
+                    <p class="hero-sub-role">Full-Stack Developer — Automatización con IA</p>
+                    <p class="hero-stack">5 años construyendo producto en producción · React · Node.js · n8n ·
+                        Claude/Gemini
+                        API
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#proyectos-2026" class="btn-primary">Ver proyectos</a>
+                        <a href="mailto:yuliamonti@gmail.com?subject=..." class="btn-ghost">Contactar</a>
+                        <a href="https://www.linkedin.com/in/yuliamonti/" target="_blank" rel="noopener" class="btn-lin"
+                            aria-label="Perfil de Yulia Monti en LinkedIn (se abre en una pestaña nueva)">
+                            <img src="imagenes/linkedin.webp" width="50" height="50" alt="" loading="eager">
+                        </a>
+                    </div>
+                </div>
+                <img src="imagenes/yulia-monti.webp" alt="Yulia Monti, Frontend Developer" class="hero-foto" width="280"
+                    height="280" fetchpriority="high">
+            </div>
+        </section>
+        <!-- ═══ TECH STACK — CARRUSEL ═════════════════════════ -->
+        <section class="stack-section" aria-labelledby="tit-stack" id="stack">
+            <div class="stack-track-wrap">
+                <div class="stack-track" aria-label="Tech Stack" role="list">
+                    <span class="stack-chip" role="listitem"><img src="imagenes/html-5.webp" width="20" height="20"
+                            alt="" loading="lazy"> HTML5</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/css.webp" width="20" height="20" alt=""
+                            loading="lazy"> CSS3</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/javascript.webp" width="20" height="20"
+                            alt="" loading="lazy"> JavaScript</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/react.webp" width="20" height="20"
+                            alt="" loading="lazy"> React</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/nodejs.webp" width="20" height="20"
+                            alt="" loading="lazy"> Node.js</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/nestjs.webp" width="20" height="20"
+                            alt="" loading="lazy"> NestJS</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/sass.webp" width="20" height="20" alt=""
+                            loading="lazy"> Sass</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/pnpm.webp" width="20" height="20" alt=""
+                            loading="lazy"> pnpm</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/jwt.webp" width="20" height="20" alt=""
+                            loading="lazy"> JWT</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/websocket.webp" width="20" height="20"
+                            alt="" loading="lazy"> WebSockets</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/claude.webp" width="20" height="20"
+                            alt="" loading="lazy"> Claude API</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/claude-code.webp" width="20" height="20"
+                            alt="" loading="lazy"> Claude Code</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/opencode.webp" width="20" height="20"
+                            alt="" loading="lazy"> OpenCode</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/chatgpt-icon.webp" width="20"
+                            height="20" alt="" loading="lazy"> ChatGPT</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/gemini.webp" width="20" height="20"
+                            alt="" loading="lazy"> Gemini API</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/n8n.webp" width="20" height="20" alt=""
+                            loading="lazy"> n8n</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/supabase.webp" width="20" height="20"
+                            alt="" loading="lazy"> Supabase</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/whatsapp.webp" width="20" height="20"
+                            alt="" loading="lazy"> WhatsApp API</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/seo-search-symbol.webp" width="20"
+                            height="20" alt="" loading="lazy"> SEO Técnico</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/schema-org.webp" width="20" height="20"
+                            alt="" loading="lazy"> Schema.org</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/geo-aeo.webp" width="20" height="20"
+                            alt="" loading="lazy"> GEO / AEO</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/core-web-vitals.webp" width="20"
+                            height="20" alt="" loading="lazy"> Core Web Vitals</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/google-tag-manager.webp" width="20"
+                            height="20" alt="" loading="lazy"> Google Tag Manager</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/mysql.webp" width="20" height="20"
+                            alt="" loading="lazy"> MySQL</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/firebase-.webp" width="20" height="20"
+                            alt="" loading="lazy"> Firebase</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/mondo-db.webp" width="20" height="20"
+                            alt="" loading="lazy"> MongoDB</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/git.webp" width="20" height="20" alt=""
+                            loading="lazy"> Git</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/github.webp" width="20" height="20"
+                            alt="" loading="lazy"> GitHub</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/cloudflare.webp" width="20" height="20"
+                            alt="" loading="lazy"> Cloudflare</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/wordpress.webp" width="20" height="20"
+                            alt="" loading="lazy"> WordPress</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/bootstrap-logo-shadow.webp" width="20"
+                            height="20" alt="" loading="lazy"> Bootstrap</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/figma.webp" width="20" height="20"
+                            alt="" loading="lazy"> Figma</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/php.webp" width="20" height="20" alt=""
+                            loading="lazy"> PHP</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/gulp.webp" width="20" height="20" alt=""
+                            loading="lazy"> Gulp</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/netlify.webp" width="20" height="20"
+                            alt="" loading="lazy"> Netlify</span>
+                    <span class="stack-chip" role="listitem"><img src="imagenes/adwords.webp" width="20" height="20"
+                            alt="" loading="lazy"> Google Ads</span>
                 </div>
             </div>
-            <img src="imagenes/yulia-monti.webp" alt="Yulia Monti, Frontend Developer" class="hero-foto" width="280"
-                height="280" fetchpriority="high">
-        </div>
-    </section>
-    <!-- ═══ TECH STACK — CARRUSEL ═════════════════════════ -->
-    <section class="stack-section" aria-labelledby="tit-stack" id="stack">
-        <div class="stack-track-wrap">
-            <div class="stack-track" aria-label="Tech Stack" role="list">
-                <span class="stack-chip" role="listitem"><img src="imagenes/html-5.webp" width="20" height="20" alt=""
-                        loading="lazy"> HTML5</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/css.webp" width="20" height="20" alt=""
-                        loading="lazy"> CSS3</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/javascript.webp" width="20" height="20"
-                        alt="" loading="lazy"> JavaScript</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/react.webp" width="20" height="20" alt=""
-                        loading="lazy"> React</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/nodejs.webp" width="20" height="20" alt=""
-                        loading="lazy"> Node.js</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/nestjs.webp" width="20" height="20" alt=""
-                        loading="lazy"> NestJS</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/sass.webp" width="20" height="20" alt=""
-                        loading="lazy"> Sass</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/pnpm.webp" width="20" height="20" alt=""
-                        loading="lazy"> pnpm</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/jwt.webp" width="20" height="20" alt=""
-                        loading="lazy"> JWT</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/websocket.webp" width="20" height="20"
-                        alt="" loading="lazy"> WebSockets</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/claude.webp" width="20" height="20" alt=""
-                        loading="lazy"> Claude API</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/claude-code.webp" width="20" height="20"
-                        alt="" loading="lazy"> Claude Code</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/opencode.webp" width="20" height="20" alt=""
-                        loading="lazy"> OpenCode</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/chatgpt-icon.webp" width="20" height="20"
-                        alt="" loading="lazy"> ChatGPT</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/gemini.webp" width="20" height="20" alt=""
-                        loading="lazy"> Gemini API</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/n8n.webp" width="20" height="20" alt=""
-                        loading="lazy"> n8n</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/supabase.webp" width="20" height="20" alt=""
-                        loading="lazy"> Supabase</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/whatsapp.webp" width="20" height="20" alt=""
-                        loading="lazy"> WhatsApp API</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/seo-search-symbol.webp" width="20"
-                        height="20" alt="" loading="lazy"> SEO Técnico</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/schema-org.webp" width="20" height="20"
-                        alt="" loading="lazy"> Schema.org</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/geo-aeo.webp" width="20" height="20" alt=""
-                        loading="lazy"> GEO / AEO</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/core-web-vitals.webp" width="20" height="20"
-                        alt="" loading="lazy"> Core Web Vitals</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/google-tag-manager.webp" width="20"
-                        height="20" alt="" loading="lazy"> Google Tag Manager</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/mysql.webp" width="20" height="20" alt=""
-                        loading="lazy"> MySQL</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/firebase-.webp" width="20" height="20"
-                        alt="" loading="lazy"> Firebase</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/mondo-db.webp" width="20" height="20" alt=""
-                        loading="lazy"> MongoDB</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/git.webp" width="20" height="20" alt=""
-                        loading="lazy"> Git</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/github.webp" width="20" height="20" alt=""
-                        loading="lazy"> GitHub</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/cloudflare.webp" width="20" height="20"
-                        alt="" loading="lazy"> Cloudflare</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/wordpress.webp" width="20" height="20"
-                        alt="" loading="lazy"> WordPress</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/bootstrap-logo-shadow.webp" width="20"
-                        height="20" alt="" loading="lazy"> Bootstrap</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/figma.webp" width="20" height="20" alt=""
-                        loading="lazy"> Figma</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/php.webp" width="20" height="20" alt=""
-                        loading="lazy"> PHP</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/gulp.webp" width="20" height="20" alt=""
-                        loading="lazy"> Gulp</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/netlify.webp" width="20" height="20" alt=""
-                        loading="lazy"> Netlify</span>
-                <span class="stack-chip" role="listitem"><img src="imagenes/adwords.webp" width="20" height="20" alt=""
-                        loading="lazy"> Google Ads</span>
+        </section>
+        <!-- ═══ PROYECTOS 2021–2024 ═══════════════════════════ -->
+        <section class="proyectos-section" aria-labelledby="tit-proy" id="proyectos">
+            <div class="contenedor">
+                <p class="section-label">Trayectoria Estudiantil</p>
+                <h2 id="tit-proy">Proyectos 2021–2024</h2>
             </div>
-        </div>
-    </section>
-    <!-- ═══ PROYECTOS 2021–2024 ═══════════════════════════ -->
-    <section class="proyectos-section" aria-labelledby="tit-proy" id="proyectos">
-        <div class="contenedor">
-            <p class="section-label">Trayectoria Estudiantil</p>
-            <h2 id="tit-proy">Proyectos 2021–2024</h2>
-        </div>
-        <div class="proyectos-lista">
-            <article class="proyecto-item proyecto-item--legacy fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/mindo-web.webp" alt="Web Site Mindo Ecuador" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2022</p>
-                    <h3 class="proyecto-titulo">Mindo, Ecuador</h3>
-                    <p class="proyecto-desc">Sitio informativo para turistas. HTML, CSS y JavaScript vanilla.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+            <div class="proyectos-lista">
+                <article class="proyecto-item proyecto-item--legacy fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/mindo-web.webp" alt="Web Site Mindo Ecuador" loading="lazy">
                     </div>
-                    <a href="https://mindo-ecuador.netlify.app/" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver proyecto</a>
-                </div>
-            </article>
-            <article class="proyecto-item proyecto-item--legacy fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/cap-imperfecta-png.webp" alt="E-commerce Imperfecta Cosmética Natural"
-                        loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2022 · Proyecto de estudiante, modernizado en 2026</p>
-                    <h3 class="proyecto-titulo">E-commerce con React</h3>
-                    <p class="proyecto-desc">Mi primer e-commerce, hecho durante la carrera de Desarrollo Full Stack.
-                        Carrito de compras, checkout con Firebase y React Router Dom. Stack actualizado en 2026:
-                        migrado a Vite, imágenes optimizadas a WebP y CSS propio sin dependencias externas.
-                    </p>
-                    <div class="proyecto-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Vite</span>
-                        <span class="tag">Firebase</span>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2022</p>
+                        <h3 class="proyecto-titulo">Mindo, Ecuador</h3>
+                        <p class="proyecto-desc">Sitio informativo para turistas. HTML, CSS y JavaScript vanilla.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://mindo-ecuador.netlify.app/" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver proyecto</a>
                     </div>
-                    <a href="https://imperfecta-cosmetica-natural.netlify.app/" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver proyecto</a>
-                </div>
-            </article>
-            <article class="proyecto-item proyecto-item--legacy fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/gif-api.webp" alt="App buscadora de GIFs" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2022 · Proyecto de práctica</p>
-                    <h3 class="proyecto-titulo">Gif App</h3>
-                    <p class="proyecto-desc">Buscador de GIFs por categoría con integración de API externa. Primer
-                        proyecto con React — modernizado en 2026 (Vite 5, manejo de errores, buenas prácticas de
-                        seguridad).</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Vite</span>
-                        <span class="tag">Fetch API</span>
+                </article>
+                <article class="proyecto-item proyecto-item--legacy fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/cap-imperfecta-png.webp" alt="E-commerce Imperfecta Cosmética Natural"
+                            loading="lazy">
                     </div>
-                    <a href="https://yuliamonti.github.io/gif-api/" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver proyecto</a>
-                </div>
-            </article>
-            <article class="proyecto-item proyecto-item--legacy fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/cap-LaWebDeSkay.webp" alt="La Web de Skay Beilinson" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2021</p>
-                    <h3 class="proyecto-titulo">La Web de Skay</h3>
-                    <p class="proyecto-desc">Sitio del guitarrista de Los Redondos. Build automatizado con Sass y Gulp.
-                    </p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">Sass</span>
-                        <span class="tag">Gulp</span>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2022 · Proyecto de estudiante, modernizado en 2026</p>
+                        <h3 class="proyecto-titulo">E-commerce con React</h3>
+                        <p class="proyecto-desc">Mi primer e-commerce, hecho durante la carrera de Desarrollo Full
+                            Stack.
+                            Carrito de compras, checkout con Firebase y React Router Dom. Stack actualizado en 2026:
+                            migrado a Vite, imágenes optimizadas a WebP y CSS propio sin dependencias externas.
+                        </p>
+                        <div class="proyecto-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="https://imperfecta-cosmetica-natural.netlify.app/" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver proyecto</a>
                     </div>
-                    <a href="https://yuliamonti.github.io/laWebDeSkay/" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver proyecto</a>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="proyectos-section" aria-labelledby="tit-proy-26" id="proyectos-2026">
-        <div class="contenedor">
-            <p class="section-label">Stack moderno · 2025–2026</p>
-            <h2 id="tit-proy-26">Proyectos</h2>
-        </div>
+                </article>
+                <article class="proyecto-item proyecto-item--legacy fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/gif-api.webp" alt="App buscadora de GIFs" loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2022 · Proyecto de práctica</p>
+                        <h3 class="proyecto-titulo">Gif App</h3>
+                        <p class="proyecto-desc">Buscador de GIFs por categoría con integración de API externa. Primer
+                            proyecto con React — modernizado en 2026 (Vite 5, manejo de errores, buenas prácticas de
+                            seguridad).</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Fetch API</span>
+                        </div>
+                        <a href="https://yuliamonti.github.io/gif-api/" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto-item proyecto-item--legacy fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/cap-LaWebDeSkay.webp" alt="La Web de Skay Beilinson" loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2021</p>
+                        <h3 class="proyecto-titulo">La Web de Skay</h3>
+                        <p class="proyecto-desc">Sitio del guitarrista de Los Redondos. Build automatizado con Sass y
+                            Gulp.
+                        </p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Sass</span>
+                            <span class="tag">Gulp</span>
+                        </div>
+                        <a href="https://yuliamonti.github.io/laWebDeSkay/" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="proyectos-section" aria-labelledby="tit-proy-26" id="proyectos-2026">
+            <div class="contenedor">
+                <p class="section-label">Stack moderno · 2025–2026</p>
+                <h2 id="tit-proy-26">Proyectos</h2>
+            </div>
 
-        <!-- ── A. CLIENTES REALES — máxima prioridad, prueba de facturación ── -->
-        <div class="contenedor proyectos-subhead">
-            <p class="section-label section-label--sm">01 · Clientes reales</p>
-            <p class="proyectos-subhead-desc">Sitios en producción, con dominio propio y tráfico real.</p>
-        </div>
-        <div class="proyectos-lista">
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-metodo-doshas.webp"
-                        alt="Método Doshas, sitio web para nutricionista digestiva en Barcelona" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026 · Cliente real · Barcelona, España</p>
-                    <h3 class="proyecto-titulo">Método Doshas</h3>
-                    <p class="proyecto-desc">Landing page completa para nutricionista digestiva con 99k seguidores en
-                        Instagram. HTML/CSS/JS estático, Lighthouse 100/100 en mobile y desktop, Schema
-                        MedicalBusiness + FAQPage + AggregateRating, integración Stripe con modal de país (España /
-                        Chile), 7 artículos de blog SEO posicionados en ChatGPT, Gemini y Google AI.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">Schema Médico</span>
-                        <span class="tag">Stripe</span>
-                        <span class="tag">SEO / GEO</span>
+            <!-- ── A. CLIENTES REALES — máxima prioridad, prueba de facturación ── -->
+            <div class="contenedor proyectos-subhead">
+                <p class="section-label section-label--sm">01 · Clientes reales</p>
+                <p class="proyectos-subhead-desc">Sitios en producción, con dominio propio y tráfico real.</p>
+            </div>
+            <div class="proyectos-lista">
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-metodo-doshas.webp"
+                            alt="Método Doshas, sitio web para nutricionista digestiva en Barcelona" loading="lazy">
                     </div>
-                    <a href="https://metododoshas.com" target="_blank" rel="noopener" class="proyecto-link">Ver
-                        sitio</a>
-                </div>
-            </article>
-
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-la-gondola.webp"
-                        alt="La Góndola Hostería, migración y optimización de WordPress, Ecuador" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026 · Cliente real · Ecuador</p>
-                    <h3 class="proyecto-titulo">La Góndola Hostería</h3>
-                    <p class="proyecto-desc">Sitio en WordPress sin actualizar desde su creación en 2017.
-                        Optimización de rendimiento completa: de 48 a 95 en Lighthouse. Sin migrar el CMS — trabajo
-                        directo sobre la instalación existente.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">WordPress</span>
-                        <span class="tag">WPO</span>
-                        <span class="tag">Core Web Vitals</span>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026 · Cliente real · Barcelona, España</p>
+                        <h3 class="proyecto-titulo">Método Doshas</h3>
+                        <p class="proyecto-desc">Landing page completa para nutricionista digestiva con 99k seguidores
+                            en
+                            Instagram. HTML/CSS/JS estático, Lighthouse 100/100 en mobile y desktop, Schema
+                            MedicalBusiness + FAQPage + AggregateRating, integración Stripe con modal de país (España /
+                            Chile), 7 artículos de blog SEO posicionados en ChatGPT, Gemini y Google AI.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">Schema Médico</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">SEO / GEO</span>
+                        </div>
+                        <a href="https://metododoshas.com" target="_blank" rel="noopener" class="proyecto-link">Ver
+                            sitio</a>
                     </div>
-                    <a href="https://lagondolaecuador.com" target="_blank" rel="noopener" class="proyecto-link">Ver
-                        sitio</a>
-                </div>
-            </article>
+                </article>
 
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-oceanic-hosteria.webp"
-                        alt="Hostería Oceanic, sitio bilingüe para hospedaje en Puerto López, Ecuador" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026 · Cliente real · Ecuador</p>
-                    <h3 class="proyecto-titulo">Hostería Oceanic</h3>
-                    <p class="proyecto-desc">Sitio bilingüe (es/en) para hostería frente al mar en Puerto López,
-                        Ecuador. HTML/CSS/JS estático, imágenes optimizadas a WebP, Schema LodgingBusiness y
-                        Lighthouse 90+ en mobile y desktop.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">WPO</span>
-                        <span class="tag">Schema</span>
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-la-gondola.webp"
+                            alt="La Góndola Hostería, migración y optimización de WordPress, Ecuador" loading="lazy">
                     </div>
-                    <a href="https://github.com/cirujanadigital/oceanichosteria" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-        </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026 · Cliente real · Ecuador</p>
+                        <h3 class="proyecto-titulo">La Góndola Hostería</h3>
+                        <p class="proyecto-desc">Sitio en WordPress sin actualizar desde su creación en 2017.
+                            Optimización de rendimiento completa: de 48 a 95 en Lighthouse. Sin migrar el CMS — trabajo
+                            directo sobre la instalación existente.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">WPO</span>
+                            <span class="tag">Core Web Vitals</span>
+                        </div>
+                        <a href="https://lagondolaecuador.com" target="_blank" rel="noopener" class="proyecto-link">Ver
+                            sitio</a>
+                    </div>
+                </article>
 
-        <!-- ── B. AUTOMATIZACIÓN CON IA — bots con interfaz real, ecosistema médico ── -->
-        <div class="contenedor proyectos-subhead">
-            <p class="section-label section-label--sm">02 · Automatización con IA</p>
-            <p class="proyectos-subhead-desc">Bots y agentes en producción sobre WhatsApp Business API, con
-                dashboard operativo propio.</p>
-        </div>
-        <div class="proyectos-lista">
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-aurora-recepcionista.webp"
-                        alt="Aurora, recepcionista virtual con IA para WhatsApp" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026 · Activo en producción</p>
-                    <h3 class="proyecto-titulo">Aurora — Recepcionista Virtual</h3>
-                    <p class="proyecto-desc">Bot de WhatsApp con IA generativa: clasifica consultas de pacientes,
-                        agenda turnos, detecta urgencias y escala a un humano. Node.js puro, máquina de estados
-                        por conversación.</p>
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-oceanic-hosteria.webp"
+                            alt="Hostería Oceanic, sitio bilingüe para hospedaje en Puerto López, Ecuador"
+                            loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026 · Cliente real · Ecuador</p>
+                        <h3 class="proyecto-titulo">Hostería Oceanic</h3>
+                        <p class="proyecto-desc">Sitio bilingüe (es/en) para hostería frente al mar en Puerto López,
+                            Ecuador. HTML/CSS/JS estático, imágenes optimizadas a WebP, Schema LodgingBusiness y
+                            Lighthouse 90+ en mobile y desktop.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">WPO</span>
+                            <span class="tag">Schema</span>
+                        </div>
+                        <a href="https://github.com/cirujanadigital/oceanichosteria" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ── B. AUTOMATIZACIÓN CON IA — bots con interfaz real, ecosistema médico ── -->
+            <div class="contenedor proyectos-subhead">
+                <p class="section-label section-label--sm">02 · Automatización con IA</p>
+                <p class="proyectos-subhead-desc">Bots y agentes en producción sobre WhatsApp Business API, con
+                    dashboard operativo propio.</p>
+            </div>
+            <div class="proyectos-lista">
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-aurora-recepcionista.webp"
+                            alt="Aurora, recepcionista virtual con IA para WhatsApp" loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026 · Activo en producción</p>
+                        <h3 class="proyecto-titulo">Aurora — Recepcionista Virtual</h3>
+                        <p class="proyecto-desc">Bot de WhatsApp con IA generativa: clasifica consultas de pacientes,
+                            agenda turnos, detecta urgencias y escala a un humano. Node.js puro, máquina de estados
+                            por conversación.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Gemini API</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                        <a href="https://github.com/cirujana-digital/llm-automation-medica" target="_blank"
+                            rel="noopener" class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-anti-no-shows.webp"
+                            alt="Sistema Anti No-Shows, bot de WhatsApp para consultorios" loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026 · Activo en producción</p>
+                        <h3 class="proyecto-titulo">Sistema Anti No-Shows</h3>
+                        <p class="proyecto-desc">Bot de WhatsApp para consultorios médicos. Recordatorios automáticos y
+                            clasificación de respuestas con IA generativa.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Gemini API</span>
+                            <span class="tag">Supabase</span>
+                        </div>
+                        <a href="https://github.com/cirujana-digital/llm-automation-medica" target="_blank"
+                            rel="noopener" class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img"> <img src="imagenes/proyecto-landing-boilerplate.webp"
+                            alt="Landing Boilerplate, componentizador de nav y footer con template de Hero"
+                            loading="lazy"> </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026</p>
+                        <h3 class="proyecto-titulo">Landing Boilerplate</h3>
+                        <p class="proyecto-desc">Componentizador de nav y footer en JS puro para sitios estáticos sin
+                            build system: un solo archivo de configuración se inyecta en todas las páginas. Incluye
+                            template de Hero con checklist de 24 puntos de performance y accesibilidad (sin layout
+                            shift, dropdowns accesibles, scroll optimizado con requestAnimationFrame).</p>
+                        <div class="proyecto-tags"> <span class="tag">JavaScript</span> <span
+                                class="tag">Accesibilidad</span> <span class="tag">WPO</span> </div> <a
+                            href="https://github.com/cirujana-digital/landing-boilerplate" target="_blank"
+                            rel="noopener" class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ── C. STACKS Y HERRAMIENTAS TÉCNICAS — repos sin interfaz visual: NO son sitios ── -->
+            <div class="contenedor proyectos-subhead">
+                <p class="section-label section-label--sm">03 · Stacks y herramientas técnicas</p>
+                <p class="proyectos-subhead-desc">Repos de infraestructura y tooling interno — no son sitios web, son
+                    sistemas y templates reutilizables en producción.</p>
+            </div>
+            <div class="stacks-lista">
+                <article class="stack-item fade-up">
+                    <div class="stack-item-head">
+                        <span class="stack-item-badge">Node.js · Gemini API</span>
+                        <p class="proyecto-eyebrow">2026</p>
+                    </div>
+                    <h3 class="proyecto-titulo">SEO / GEO / AEO Toolkit</h3>
+                    <p class="proyecto-desc">Kit de checklist técnico y monitoreo de visibilidad en motores de
+                        respuesta generativa. Protocolo manual de 13 queries contra 5 plataformas de IA (ChatGPT,
+                        Gemini, Perplexity, Claude, Google AI Overviews) y tracker automatizado en Node.js que
+                        consulta la Gemini API vía cron y calcula un score diario de menciones de marca.</p>
                     <div class="proyecto-tags">
                         <span class="tag">Node.js</span>
                         <span class="tag">Gemini API</span>
-                        <span class="tag">SQLite</span>
+                        <span class="tag">GEO / AEO</span>
                     </div>
-                    <a href="https://github.com/cirujana-digital/llm-automation-medica" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
+                    <a href="https://github.com/cirujana-digital/seo-geo-aeo-toolkit" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver repo →</a>
+                </article>
 
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-anti-no-shows.webp"
-                        alt="Sistema Anti No-Shows, bot de WhatsApp para consultorios" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026 · Activo en producción</p>
-                    <h3 class="proyecto-titulo">Sistema Anti No-Shows</h3>
-                    <p class="proyecto-desc">Bot de WhatsApp para consultorios médicos. Recordatorios automáticos y
-                        clasificación de respuestas con IA generativa.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">n8n</span>
-                        <span class="tag">Gemini API</span>
-                        <span class="tag">Supabase</span>
+                <article class="stack-item fade-up">
+                    <div class="stack-item-head">
+                        <span class="stack-item-badge">JSON-LD · Schema.org</span>
+                        <p class="proyecto-eyebrow">2026</p>
                     </div>
-                    <a href="https://github.com/cirujana-digital/llm-automation-medica" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-        </div>
-
-        <!-- ── C. STACKS Y HERRAMIENTAS TÉCNICAS — repos sin interfaz visual: NO son sitios ── -->
-        <div class="contenedor proyectos-subhead">
-            <p class="section-label section-label--sm">03 · Stacks y herramientas técnicas</p>
-            <p class="proyectos-subhead-desc">Repos de infraestructura y tooling interno — no son sitios web, son
-                sistemas y templates reutilizables en producción.</p>
-        </div>
-        <div class="stacks-lista">
-            <article class="stack-item fade-up">
-                <div class="stack-item-head">
-                    <span class="stack-item-badge">Node.js · Gemini API</span>
-                    <p class="proyecto-eyebrow">2026</p>
-                </div>
-                <h3 class="proyecto-titulo">SEO / GEO / AEO Toolkit</h3>
-                <p class="proyecto-desc">Kit de checklist técnico y monitoreo de visibilidad en motores de
-                    respuesta generativa. Protocolo manual de 13 queries contra 5 plataformas de IA (ChatGPT,
-                    Gemini, Perplexity, Claude, Google AI Overviews) y tracker automatizado en Node.js que
-                    consulta la Gemini API vía cron y calcula un score diario de menciones de marca.</p>
-                <div class="proyecto-tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Gemini API</span>
-                    <span class="tag">GEO / AEO</span>
-                </div>
-                <a href="https://github.com/cirujana-digital/seo-geo-aeo-toolkit" target="_blank" rel="noopener"
-                    class="proyecto-link">Ver repo →</a>
-            </article>
-
-            <article class="stack-item fade-up">
-                <div class="stack-item-head">
-                    <span class="stack-item-badge">JSON-LD · Schema.org</span>
-                    <p class="proyecto-eyebrow">2026</p>
-                </div>
-                <h3 class="proyecto-titulo">Schema Markup Médico</h3>
-                <p class="proyecto-desc">Templates JSON-LD reutilizables para infraestructura digital médica:
-                    Physician, MedicalBusiness, FAQPage, Article y BreadcrumbList. Probados en producción con
-                    Lighthouse 90-100/100.</p>
-                <div class="proyecto-tags">
-                    <span class="tag">JSON-LD</span>
-                    <span class="tag">Schema.org</span>
-                    <span class="tag">SEO Técnico</span>
-                </div>
-                <a href="https://github.com/cirujana-digital/schema-markup-medico" target="_blank" rel="noopener"
-                    class="proyecto-link">Ver repo →</a>
-            </article>
-        </div>
-
-        <!-- ── D. MARCA PROPIA Y DEMOS — vitrina de capacidad técnica ── -->
-        <div class="contenedor proyectos-subhead">
-            <p class="section-label section-label--sm">04 · Marca propia y demos</p>
-            <p class="proyectos-subhead-desc">Sitios propios y demos técnicas usadas como vitrina de capacidad.</p>
-        </div>
-        <div class="proyectos-lista">
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-cirujana-digital.webp" alt="Cirujana Digital, sitio de marca propia"
-                        loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2025</p>
-                    <h3 class="proyecto-titulo">Cirujana Digital</h3>
-                    <p class="proyecto-desc">Sitio de marca propia. HTML/CSS/JS estático sin CMS. Lighthouse 100,
-                        Schema completo, captación de pacientes en LATAM.</p>
+                    <h3 class="proyecto-titulo">Schema Markup Médico</h3>
+                    <p class="proyecto-desc">Templates JSON-LD reutilizables para infraestructura digital médica:
+                        Physician, MedicalBusiness, FAQPage, Article y BreadcrumbList. Probados en producción con
+                        Lighthouse 90-100/100.</p>
                     <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">JSON-LD</span>
+                        <span class="tag">Schema.org</span>
                         <span class="tag">SEO Técnico</span>
-                        <span class="tag">Schema</span>
                     </div>
-                    <a href="https://github.com/cirujanadigital/cirujanadigital" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-rebio-clinique.webp"
-                        alt="Rebio Clinique, landing React para clínica GLP-1" loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026</p>
-                    <h3 class="proyecto-titulo">Rebio Clinique</h3>
-                    <p class="proyecto-desc">Landing en React para clínica GLP-1. Calculadora de IMC, simulador de
-                        elegibilidad y tracker de dosis con custom hooks.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Vite</span>
-                        <span class="tag">Custom Hooks</span>
-                    </div>
-                    <a href="https://github.com/cirujana-digital/fullstack-react-vite" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-juliette-astrologa.webp" alt="Juliette Astróloga, demo de portfolio"
-                        loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2025</p>
-                    <h3 class="proyecto-titulo">Juliette Astróloga</h3>
-                    <p class="proyecto-desc">Demo de portfolio con glassmorphism, CSS crítico inline y
-                        marcado Schema.org.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">Schema</span>
-                    </div>
-                    <a href="https://github.com/cirujanadigital/juliette-astrologa" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-
-            <article class="proyecto-item fade-up">
-                <div class="proyecto-img">
-                    <img src="imagenes/proyecto-experiencia-fluor.webp"
-                        alt="Experiencia Flúor, landing de conversión para talleres de pintura UV en Rosario"
-                        loading="lazy">
-                </div>
-                <div class="proyecto-texto">
-                    <p class="proyecto-eyebrow">2026</p>
-                    <h3 class="proyecto-titulo">Experiencia Flúor</h3>
-                    <p class="proyecto-desc">Landing de conversión para talleres de pintura fluorescente en Rosario.
-                        Dark theme neón, CTAs de WhatsApp por paquete y CSS puro sin dependencias.</p>
-                    <div class="proyecto-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">WPO</span>
-                    </div>
-                    <a href="https://github.com/cirujanadigital/fluor-experiencia" target="_blank" rel="noopener"
-                        class="proyecto-link">Ver en GitHub</a>
-                </div>
-            </article>
-        </div>
-    </section>
-    <!-- ═══ SOBRE MÍ ═══════════════════════════════════════ -->
-    <section class="sobre-mi" aria-labelledby="tit-sobre-mi">
-        <div class="sobre-mi-inner">
-            <div class="sobre-mi-img">
-                <img src="imagenes/YM-CD-400pxSF.webp"
-                    alt="Yulia Monti, de instrumentadora quirúrgica a desarrolladora web" loading="lazy">
+                    <a href="https://github.com/cirujana-digital/schema-markup-medico" target="_blank" rel="noopener"
+                        class="proyecto-link">Ver repo →</a>
+                </article>
             </div>
-            <div class="sobre-mi-texto">
-                <h2 class="sr-only" id="tit-sobre-mi">Sobre mí</h2>
-                <p>14 años como instrumentadora quirúrgica. Hoy, desarrolladora frontend.</p>
-                <p>Trabajé en quirófano durante más de una década — cirugía general, neurocirugía, traumatología,
-                    guardias nocturnas. Ese trabajo me dejó algo que no se aprende en un curso: precisión bajo presión,
-                    protocolo, y la costumbre de que el detalle que parece menor es el que importa.</p>
-                <p>En 2022 empecé a estudiar desarrollo web. Desde entonces construyo, despliego y mantengo sitios y
-                    automatizaciones para clientes reales en producción, en Argentina, España y Ecuador.</p>
-                <div class="sobre-mi-datos">
-                    <div class="sobre-mi-dato">
-                        <span class="num">15</span>
-                        <span class="label">Años en quirófano</span>
+
+            <!-- ── D. MARCA PROPIA Y DEMOS — vitrina de capacidad técnica ── -->
+            <div class="contenedor proyectos-subhead">
+                <p class="section-label section-label--sm">04 · Marca propia y demos</p>
+                <p class="proyectos-subhead-desc">Sitios propios y demos técnicas usadas como vitrina de capacidad.</p>
+            </div>
+            <div class="proyectos-lista">
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-cirujana-digital.webp" alt="Cirujana Digital, sitio de marca propia"
+                            loading="lazy">
                     </div>
-                    <div class="sobre-mi-dato">
-                        <span class="num">5</span>
-                        <span class="label">Años como developer</span>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2025</p>
+                        <h3 class="proyecto-titulo">Cirujana Digital</h3>
+                        <p class="proyecto-desc">Sitio de marca propia. HTML/CSS/JS estático sin CMS. Lighthouse 100,
+                            Schema completo, captación de pacientes en LATAM.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">SEO Técnico</span>
+                            <span class="tag">Schema</span>
+                        </div>
+                        <a href="https://github.com/cirujanadigital/cirujanadigital" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver en GitHub</a>
                     </div>
-                    <div class="sobre-mi-dato">
-                        <span class="num">3</span>
-                        <span class="label">Países con clientes activos</span>
+                </article>
+
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-rebio-clinique.webp"
+                            alt="Rebio Clinique, landing React para clínica GLP-1" loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026</p>
+                        <h3 class="proyecto-titulo">Rebio Clinique</h3>
+                        <p class="proyecto-desc">Landing en React para clínica GLP-1. Calculadora de IMC, simulador de
+                            elegibilidad y tracker de dosis con custom hooks.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Custom Hooks</span>
+                        </div>
+                        <a href="https://github.com/cirujana-digital/fullstack-react-vite" target="_blank"
+                            rel="noopener" class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-juliette-astrologa.webp" alt="Juliette Astróloga, demo de portfolio"
+                            loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2025</p>
+                        <h3 class="proyecto-titulo">Juliette Astróloga</h3>
+                        <p class="proyecto-desc">Demo de portfolio con glassmorphism, CSS crítico inline y
+                            marcado Schema.org.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">Schema</span>
+                        </div>
+                        <a href="https://github.com/cirujanadigital/juliette-astrologa" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-item fade-up">
+                    <div class="proyecto-img">
+                        <img src="imagenes/proyecto-experiencia-fluor.webp"
+                            alt="Experiencia Flúor, landing de conversión para talleres de pintura UV en Rosario"
+                            loading="lazy">
+                    </div>
+                    <div class="proyecto-texto">
+                        <p class="proyecto-eyebrow">2026</p>
+                        <h3 class="proyecto-titulo">Experiencia Flúor</h3>
+                        <p class="proyecto-desc">Landing de conversión para talleres de pintura fluorescente en Rosario.
+                            Dark theme neón, CTAs de WhatsApp por paquete y CSS puro sin dependencias.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">WPO</span>
+                        </div>
+                        <a href="https://github.com/cirujanadigital/fluor-experiencia" target="_blank" rel="noopener"
+                            class="proyecto-link">Ver en GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ═══ SOBRE MÍ ═══════════════════════════════════════ -->
+        <section class="sobre-mi" aria-labelledby="tit-sobre-mi">
+            <div class="sobre-mi-inner">
+                <div class="sobre-mi-img">
+                    <img src="imagenes/YM-CD-400pxSF.webp"
+                        alt="Yulia Monti, de instrumentadora quirúrgica a desarrolladora web" loading="lazy">
+                </div>
+                <div class="sobre-mi-texto">
+                    <h2 class="sr-only" id="tit-sobre-mi">Sobre mí</h2>
+                    <p>14 años como instrumentadora quirúrgica. Hoy, desarrolladora frontend.</p>
+                    <p>Trabajé en quirófano durante más de una década — cirugía general, neurocirugía, traumatología,
+                        guardias nocturnas. Ese trabajo me dejó algo que no se aprende en un curso: precisión bajo
+                        presión,
+                        protocolo, y la costumbre de que el detalle que parece menor es el que importa.</p>
+                    <p>En 2022 empecé a estudiar desarrollo web. Desde entonces construyo, despliego y mantengo sitios y
+                        automatizaciones para clientes reales en producción, en Argentina, España y Ecuador.</p>
+                    <div class="sobre-mi-datos">
+                        <div class="sobre-mi-dato">
+                            <span class="num">15</span>
+                            <span class="label">Años en quirófano</span>
+                        </div>
+                        <div class="sobre-mi-dato">
+                            <span class="num">5</span>
+                            <span class="label">Años como developer</span>
+                        </div>
+                        <div class="sobre-mi-dato">
+                            <span class="num">3</span>
+                            <span class="label">Países con clientes activos</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
     <!-- ═══ FOOTER / CONTACTO ═════════════════════════════ -->
     <footer class="footer" id="contacto">
