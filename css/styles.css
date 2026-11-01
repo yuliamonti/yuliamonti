@@ -3,7 +3,7 @@
   --violeta-2: #3d1575;
   --rosa: #f590b2;
   --rosa-dark: #e26f96;
-  --rosa-text: #b23268; 
+  --rosa-text: #b23268;
   --gris: #353637;
   --grisclaro: #faf9f7;
   --rosaclaro: #f3eef2;
@@ -818,4 +818,196 @@ button:focus-visible {
   outline: 2px solid var(--rosa);
   outline-offset: 3px;
   border-radius: 3px;
+}
+
+/* ═══ AURORA — proyecto destacado ═══ */
+.aurora {
+  background: linear-gradient(160deg, #0d0520 0%, #1a0635 45%, var(--violeta) 100%);
+  color: var(--grisclaro);
+  padding: clamp(5rem, 8vw, 9rem) 2.4rem;
+}
+.aurora-inner {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.aurora-head {
+  max-width: 80rem;
+  margin-bottom: 4rem;
+}
+.aurora-head h2 {
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  line-height: 1.15;
+  margin: 0.8rem 0 1.6rem;
+  color: #fff;
+}
+.aurora .section-label {
+  color: var(--rosa);
+}
+.aurora-lead {
+  font-size: 1.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+.aurora-estado {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.4rem;
+  border-left: 3px solid var(--rosa);
+  background: rgba(255, 255, 255, 0.06);
+}
+.aurora-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2rem;
+}
+.aurora-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  padding: 2.4rem;
+}
+.aurora-card h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.aurora-card p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: rgba(250, 249, 247, 0.88);
+}
+.aurora-pie {
+  margin-top: 3.2rem;
+}
+.aurora-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.aurora-stack li {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 99rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.aurora-limites {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 90rem;
+  color: rgba(250, 249, 247, 0.8);
+}
+.aurora .btn-ghost {
+  color: var(--grisclaro);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 768px) {
+  .aurora-head,
+  .aurora-pie {
+    text-align: left;
+  }
+}
+
+.proyecto-link + .proyecto-link {
+  margin-left: 2.4rem;
+}
+
+/* Proyectos de formación plegados */
+.formacion {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+.formacion > summary {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--violeta);
+  padding: 1.2rem 0;
+}
+.formacion[open] > summary {
+  margin-bottom: 2rem;
+}
+
+/* Testimonio */
+.testimonial {
+  max-width: 80rem;
+  margin: 4rem auto 0;
+  padding: 2.8rem 3.2rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 0.4rem solid var(--rosa);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.testimonial-stars {
+  color: var(--rosa-dark);
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--gris);
+}
+.testimonial-text strong {
+  color: var(--violeta);
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+.avatar-round {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.testimonial-name {
+  font-weight: 700;
+  color: var(--violeta);
+}
+.testimonial-role {
+  font-size: 1.4rem;
+}
+.testimonial-link {
+  color: var(--rosa-text);
+}
+@media (max-width: 768px) {
+  .testimonial {
+    margin: 3rem 2.4rem 0;
+    padding: 2.2rem 2rem;
+  }
+  .testimonial-text {
+    font-size: 1.6rem;
+  }
+}
+
+/* Stack por nivel de uso */
+.stack-section {
+  padding: 6rem 0 2rem;
+}
+.stack-grupo {
+  margin-top: 3.2rem;
+}
+.stack-grupo-titulo {
+  font-size: 1.8rem;
+  color: var(--violeta);
+}
+.stack-grupo-desc {
+  font-size: 1.4rem;
+  margin: 0.4rem 0 1.4rem;
+}
+.stack-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
 }
